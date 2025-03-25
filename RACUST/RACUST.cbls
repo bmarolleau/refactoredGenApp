@@ -1,0 +1,137 @@
+{
+  "id": "e2d3b3c9-786c-4de4-b75a-0f920ba56d53",
+  "name": "",
+  "project": "$GenApp_8259598a-b6cd-4b00-9995-d42577756ab5",
+  "codeBlocksSequence": [
+    "Program:COBOL:LGACDB01 141 209",
+    "Program:COBOL:LGACDB01 216 228",
+    "Program:COBOL:LGACDB01 232 304",
+    "Program:COBOL:LGACDB01 312 345"
+  ],
+  "codeBlocks": {
+    "Program:COBOL:LGACDB01 141 209": {
+      "program": {
+        "id": "Program:COBOL:LGACDB01",
+        "name": "Program:COBOL:LGACDB01",
+        "path": "enc:55ac6eab3868eb845da65eb2b0a28d8c3b0df98ed4906dbc436e369c78cdc34e909dbf58985aedb161ca9c2e0f56d41a6fb386e4c12bff1a73f5138f125fc08246053026cff90c008d4ae8487000c37e10e5e8951f10686a",
+        "addedByUser": false
+      },
+      "stmtEndLineNumber": 209,
+      "stmtStartLineNumber": 141,
+      "uniqueId": "Program:COBOL:LGACDB01 141 209",
+      "code": "       MAINLINE SECTION.\r\n\r\n      *----------------------------------------------------------------*\r\n      * Common code                                                    *\r\n      *----------------------------------------------------------------*\r\n      * initialize working storage variables\r\n           INITIALIZE WS-HEADER.\r\n      * set up general variable\r\n           MOVE EIBTRNID TO WS-TRANSID.\r\n           MOVE EIBTRMID TO WS-TERMID.\r\n           MOVE EIBTASKN TO WS-TASKNUM.\r\n      *----------------------------------------------------------------*\r\n\r\n\r\n      * initialize DB2 host variables\r\n           INITIALIZE DB2-OUT-INTEGERS.\r\n\r\n      *----------------------------------------------------------------*\r\n      * Process incoming commarea                                      *\r\n      *----------------------------------------------------------------*\r\n      * If NO commarea received issue an ABEND\r\n           IF EIBCALEN IS EQUAL TO ZERO\r\n               MOVE ' NO COMMAREA RECEIVED' TO EM-VARIABLE\r\n               PERFORM WRITE-ERROR-MESSAGE\r\n               EXEC CICS ABEND ABCODE('LGCA') NODUMP END-EXEC\r\n           END-IF\r\n\r\n      * initialize commarea return code to zero\r\n           MOVE '00' TO CA-RETURN-CODE\r\n           MOVE EIBCALEN TO WS-CALEN.\r\n           SET WS-ADDR-DFHCOMMAREA TO ADDRESS OF DFHCOMMAREA.\r\n\r\n      * check commarea length\r\n           ADD WS-CA-HEADER-LEN TO WS-REQUIRED-CA-LEN\r\n           ADD WS-CUSTOMER-LEN  TO WS-REQUIRED-CA-LEN\r\n\r\n      * if less set error return code and return to caller\r\n           IF EIBCALEN IS LESS THAN WS-REQUIRED-CA-LEN\r\n             MOVE '98' TO CA-RETURN-CODE\r\n             EXEC CICS RETURN END-EXEC\r\n           END-IF\r\n\r\n      * Call routine to Insert row in Customer table                   *\r\n           PERFORM Obtain-CUSTOMER-Number.\r\n           PERFORM INSERT-CUSTOMER.\r\n\r\n           EXEC CICS LINK Program(LGACVS01)\r\n                Commarea(DFHCOMMAREA)\r\n                LENGTH(225)\r\n           END-EXEC.\r\n\r\n           MOVE DB2-CUSTOMERNUM-INT TO D2-CUSTOMER-NUM.\r\n           Move '02ACUS'     To  D2-REQUEST-ID.\r\n           move '5732fec825535eeafb8fac50fee3a8aa'\r\n                             To  D2-CUSTSECR-PASS.\r\n           Move '0000'       To  D2-CUSTSECR-COUNT.\r\n           Move 'N'          To  D2-CUSTSECR-STATE.\r\n\r\n           EXEC CICS LINK Program(LGACDB02)\r\n                Commarea(CDB2AREA)\r\n                LENGTH(32500)\r\n           END-EXEC.\r\n\r\n           IF CA-RETURN-CODE NOT EQUAL 0\r\n             EXEC CICS RETURN END-EXEC\r\n           END-IF\r\n\r\n      *    Return to caller\r\n           EXEC CICS RETURN END-EXEC.",
+      "committed": false,
+      "tags": [
+        "paragraph",
+        "backward",
+        "customer",
+        "forward"
+      ],
+      "references": [],
+      "metadata": {
+        "programs": [
+          "Program:COBOL:LGACDB01"
+        ],
+        "copybooks": []
+      }
+    },
+    "Program:COBOL:LGACDB01 232 304": {
+      "program": {
+        "id": "Program:COBOL:LGACDB01",
+        "name": "Program:COBOL:LGACDB01",
+        "path": "enc:69e46124dca617642279e77073fc825b739751a19c848cf975e83f72eaf525bf3cce7e063817a9d23f1f7c1abf7c0a3749c0ad66e271e67bff3dba25195a033ba2ad2662528d2fb6fda338e1a3ea53c91bc8353e33605ac1",
+        "addedByUser": false
+      },
+      "stmtEndLineNumber": 304,
+      "stmtStartLineNumber": 232,
+      "uniqueId": "Program:COBOL:LGACDB01 232 304",
+      "code": "       INSERT-CUSTOMER.\r\n      *================================================================*\r\n      * Insert row into Customer table based on customer number        *\r\n      *================================================================*\r\n           MOVE ' INSERT CUSTOMER' TO EM-SQLREQ\r\n      *================================================================*\r\n           IF LGAC-NCS = 'ON'\r\n             EXEC SQL\r\n               INSERT INTO CUSTOMER\r\n                         ( CUSTOMERNUMBER,\r\n                           FIRSTNAME,\r\n                           LASTNAME,\r\n                           DATEOFBIRTH,\r\n                           HOUSENAME,\r\n                           HOUSENUMBER,\r\n                           POSTCODE,\r\n                           PHONEMOBILE,\r\n                           PHONEHOME,\r\n                           EMAILADDRESS )\r\n                  VALUES ( :DB2-CUSTOMERNUM-INT,\r\n                           :CA-FIRST-NAME,\r\n                           :CA-LAST-NAME,\r\n                           :CA-DOB,\r\n                           :CA-HOUSE-NAME,\r\n                           :CA-HOUSE-NUM,\r\n                           :CA-POSTCODE,\r\n                           :CA-PHONE-MOBILE,\r\n                           :CA-PHONE-HOME,\r\n                           :CA-EMAIL-ADDRESS )\r\n             END-EXEC\r\n             IF SQLCODE NOT EQUAL 0\r\n               MOVE '90' TO CA-RETURN-CODE\r\n               PERFORM WRITE-ERROR-MESSAGE\r\n               EXEC CICS RETURN END-EXEC\r\n             END-IF\r\n           ELSE\r\n             EXEC SQL\r\n               INSERT INTO CUSTOMER\r\n                         ( CUSTOMERNUMBER,\r\n                           FIRSTNAME,\r\n                           LASTNAME,\r\n                           DATEOFBIRTH,\r\n                           HOUSENAME,\r\n                           HOUSENUMBER,\r\n                           POSTCODE,\r\n                           PHONEMOBILE,\r\n                           PHONEHOME,\r\n                           EMAILADDRESS )\r\n                  VALUES ( DEFAULT,\r\n                           :CA-FIRST-NAME,\r\n                           :CA-LAST-NAME,\r\n                           :CA-DOB,\r\n                           :CA-HOUSE-NAME,\r\n                           :CA-HOUSE-NUM,\r\n                           :CA-POSTCODE,\r\n                           :CA-PHONE-MOBILE,\r\n                           :CA-PHONE-HOME,\r\n                           :CA-EMAIL-ADDRESS )\r\n             END-EXEC\r\n             IF SQLCODE NOT EQUAL 0\r\n               MOVE '90' TO CA-RETURN-CODE\r\n               PERFORM WRITE-ERROR-MESSAGE\r\n               EXEC CICS RETURN END-EXEC\r\n             END-IF\r\n      *    get value of assigned customer number\r\n               EXEC SQL\r\n                 SET :DB2-CUSTOMERNUM-INT = IDENTITY_VAL_LOCAL()\r\n               END-EXEC\r\n           END-IF.\r\n\r\n           MOVE DB2-CUSTOMERNUM-INT TO CA-CUSTOMER-NUM.\r\n\r\n           EXIT.",
+      "committed": false,
+      "tags": [
+        "paragraph",
+        "forward",
+        "customer",
+        "backward"
+      ],
+      "references": [
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 141 209",
+          "lineNumber": 185
+        }
+      ],
+      "metadata": {
+        "programs": [
+          "Program:COBOL:LGACDB01"
+        ],
+        "copybooks": []
+      }
+    },
+    "Program:COBOL:LGACDB01 216 228": {
+      "program": {
+        "id": "Program:COBOL:LGACDB01",
+        "name": "Program:COBOL:LGACDB01",
+        "path": "enc:fcf3e27f2ab5cbbabb9f6c8b5ff0067edc44d7e0ec055045f98da0e8652f37427f030a85fde1677b0984514c530f13288735db67d900d223c635dfc46b9c9a9789dc10cab3b528f4f200c1bfe54e78a935083b9a7f96fab7",
+        "addedByUser": false
+      },
+      "stmtEndLineNumber": 228,
+      "stmtStartLineNumber": 216,
+      "uniqueId": "Program:COBOL:LGACDB01 216 228",
+      "code": "       Obtain-CUSTOMER-Number.\r\n\r\n           Exec CICS Get Counter(GENAcount)\r\n                         Pool(GENApool)\r\n                         Value(LastCustNum)\r\n                         Resp(WS-RESP)\r\n           End-Exec.\r\n           If WS-RESP Not = DFHRESP(NORMAL)\r\n             MOVE 'NO' TO LGAC-NCS\r\n             Initialize DB2-CUSTOMERNUM-INT\r\n           ELSE\r\n             Move LastCustNum  To DB2-CUSTOMERNUM-INT\r\n           End-If.",
+      "committed": false,
+      "tags": [
+        "paragraph",
+        "forward",
+        "customer"
+      ],
+      "references": [
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 141 209",
+          "lineNumber": 184
+        }
+      ],
+      "metadata": {
+        "programs": [
+          "Program:COBOL:LGACDB01"
+        ]
+      }
+    },
+    "Program:COBOL:LGACDB01 312 345": {
+      "program": {
+        "id": "Program:COBOL:LGACDB01",
+        "name": "Program:COBOL:LGACDB01",
+        "path": "enc:027d1a8e76eb3b1ab9a3bb7884803433f54eb536684a0a8a03c7d6d3121abdc2c51fd82604234ceab383b27fa479b972737b752418d0a5b9df59d9f76b62687e5400f4f1cb254562bc646be5194be527531dc341aed3c6eb",
+        "addedByUser": false
+      },
+      "stmtEndLineNumber": 345,
+      "stmtStartLineNumber": 312,
+      "uniqueId": "Program:COBOL:LGACDB01 312 345",
+      "code": "       WRITE-ERROR-MESSAGE.\r\n      * Save SQLCODE in message\r\n           MOVE SQLCODE TO EM-SQLRC\r\n      * Obtain and format current time and date\r\n           EXEC CICS ASKTIME ABSTIME(WS-ABSTIME)\r\n           END-EXEC\r\n           EXEC CICS FORMATTIME ABSTIME(WS-ABSTIME)\r\n                     MMDDYYYY(WS-DATE)\r\n                     TIME(WS-TIME)\r\n           END-EXEC\r\n           MOVE WS-DATE TO EM-DATE\r\n           MOVE WS-TIME TO EM-TIME\r\n      * Write output message to TDQ\r\n           EXEC CICS LINK PROGRAM('LGSTSQ')\r\n                     COMMAREA(ERROR-MSG)\r\n                     LENGTH(LENGTH OF ERROR-MSG)\r\n           END-EXEC.\r\n      * Write 90 bytes or as much as we have of commarea to TDQ\r\n           IF EIBCALEN > 0 THEN\r\n             IF EIBCALEN < 91 THEN\r\n               MOVE DFHCOMMAREA(1:EIBCALEN) TO CA-DATA\r\n               EXEC CICS LINK PROGRAM('LGSTSQ')\r\n                         COMMAREA(CA-ERROR-MSG)\r\n                         LENGTH(LENGTH OF CA-ERROR-MSG)\r\n               END-EXEC\r\n             ELSE\r\n               MOVE DFHCOMMAREA(1:90) TO CA-DATA\r\n               EXEC CICS LINK PROGRAM('LGSTSQ')\r\n                         COMMAREA(CA-ERROR-MSG)\r\n                         LENGTH(LENGTH OF CA-ERROR-MSG)\r\n               END-EXEC\r\n             END-IF\r\n           END-IF.\r\n           EXIT.",
+      "committed": false,
+      "tags": [
+        "paragraph",
+        "forward",
+        "customer"
+      ],
+      "references": [
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 232 304",
+          "lineNumber": 293
+        },
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 232 304",
+          "lineNumber": 264
+        },
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 141 209",
+          "lineNumber": 164
+        }
+      ],
+      "metadata": {
+        "programs": [
+          "Program:COBOL:LGACDB01"
+        ],
+        "copybooks": []
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+BmsID	BmsName	IsMapSet	AncestorID	OccurID	eTimeStamp	BmsFileName

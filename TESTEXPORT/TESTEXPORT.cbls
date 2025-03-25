@@ -1,0 +1,70 @@
+{
+  "id": "f5b79344-5a8b-47ff-a9ae-e3e051a640ba",
+  "name": "",
+  "project": "$GenApp_8259598a-b6cd-4b00-9995-d42577756ab5",
+  "codeBlocksSequence": [
+    "Program:COBOL:LGACDB01 232 304",
+    "Program:COBOL:LGACDB01 312 345"
+  ],
+  "codeBlocks": {
+    "Program:COBOL:LGACDB01 232 304": {
+      "program": {
+        "id": "Program:COBOL:LGACDB01",
+        "name": "Program:COBOL:LGACDB01",
+        "path": "enc:e7179920f2cc37dbbe68fc083e44f53ac5639e5b925c654880310b9e8e84a57bfe610c170dc83fdc8b918821b3e238bb0f4b1e19b174e531272f130b124e411a4cc139ec87ddc60db598eaef4cf14fb67356f87718b7f164",
+        "addedByUser": false
+      },
+      "stmtStartLineNumber": 232,
+      "stmtEndLineNumber": 304,
+      "code": "       INSERT-CUSTOMER.\r\n      *================================================================*\r\n      * Insert row into Customer table based on customer number        *\r\n      *================================================================*\r\n           MOVE ' INSERT CUSTOMER' TO EM-SQLREQ\r\n      *================================================================*\r\n           IF LGAC-NCS = 'ON'\r\n             EXEC SQL\r\n               INSERT INTO CUSTOMER\r\n                         ( CUSTOMERNUMBER,\r\n                           FIRSTNAME,\r\n                           LASTNAME,\r\n                           DATEOFBIRTH,\r\n                           HOUSENAME,\r\n                           HOUSENUMBER,\r\n                           POSTCODE,\r\n                           PHONEMOBILE,\r\n                           PHONEHOME,\r\n                           EMAILADDRESS )\r\n                  VALUES ( :DB2-CUSTOMERNUM-INT,\r\n                           :CA-FIRST-NAME,\r\n                           :CA-LAST-NAME,\r\n                           :CA-DOB,\r\n                           :CA-HOUSE-NAME,\r\n                           :CA-HOUSE-NUM,\r\n                           :CA-POSTCODE,\r\n                           :CA-PHONE-MOBILE,\r\n                           :CA-PHONE-HOME,\r\n                           :CA-EMAIL-ADDRESS )\r\n             END-EXEC\r\n             IF SQLCODE NOT EQUAL 0\r\n               MOVE '90' TO CA-RETURN-CODE\r\n               PERFORM WRITE-ERROR-MESSAGE\r\n               EXEC CICS RETURN END-EXEC\r\n             END-IF\r\n           ELSE\r\n             EXEC SQL\r\n               INSERT INTO CUSTOMER\r\n                         ( CUSTOMERNUMBER,\r\n                           FIRSTNAME,\r\n                           LASTNAME,\r\n                           DATEOFBIRTH,\r\n                           HOUSENAME,\r\n                           HOUSENUMBER,\r\n                           POSTCODE,\r\n                           PHONEMOBILE,\r\n                           PHONEHOME,\r\n                           EMAILADDRESS )\r\n                  VALUES ( DEFAULT,\r\n                           :CA-FIRST-NAME,\r\n                           :CA-LAST-NAME,\r\n                           :CA-DOB,\r\n                           :CA-HOUSE-NAME,\r\n                           :CA-HOUSE-NUM,\r\n                           :CA-POSTCODE,\r\n                           :CA-PHONE-MOBILE,\r\n                           :CA-PHONE-HOME,\r\n                           :CA-EMAIL-ADDRESS )\r\n             END-EXEC\r\n             IF SQLCODE NOT EQUAL 0\r\n               MOVE '90' TO CA-RETURN-CODE\r\n               PERFORM WRITE-ERROR-MESSAGE\r\n               EXEC CICS RETURN END-EXEC\r\n             END-IF\r\n      *    get value of assigned customer number\r\n               EXEC SQL\r\n                 SET :DB2-CUSTOMERNUM-INT = IDENTITY_VAL_LOCAL()\r\n               END-EXEC\r\n           END-IF.\r\n\r\n           MOVE DB2-CUSTOMERNUM-INT TO CA-CUSTOMER-NUM.\r\n\r\n           EXIT.",
+      "committed": false,
+      "references": [],
+      "uniqueId": "Program:COBOL:LGACDB01 232 304",
+      "usedParagraphs": [
+        "MAINLINE_WRITE-ERROR-MESSAGE"
+      ],
+      "usedCopybookParagraphs": [],
+      "tags": [
+        "paragraph"
+      ],
+      "metadata": {
+        "programs": [
+          "Program:COBOL:LGACDB01"
+        ]
+      }
+    },
+    "Program:COBOL:LGACDB01 312 345": {
+      "program": {
+        "id": "Program:COBOL:LGACDB01",
+        "name": "Program:COBOL:LGACDB01",
+        "path": "enc:a72baa8318adbb1d8482a0c3c5a93096c0a9135da90545905b9fd1dc89c734337d15f70f1ea092cd870f881e9ed27ec32a2d85476263322da24bc1fc6ece317f1c9120fbce6dad9dc636ef159031e6bb3b2a6c2cfb1cd278",
+        "addedByUser": false
+      },
+      "stmtStartLineNumber": 312,
+      "stmtEndLineNumber": 345,
+      "code": "       WRITE-ERROR-MESSAGE.\r\n      * Save SQLCODE in message\r\n           MOVE SQLCODE TO EM-SQLRC\r\n      * Obtain and format current time and date\r\n           EXEC CICS ASKTIME ABSTIME(WS-ABSTIME)\r\n           END-EXEC\r\n           EXEC CICS FORMATTIME ABSTIME(WS-ABSTIME)\r\n                     MMDDYYYY(WS-DATE)\r\n                     TIME(WS-TIME)\r\n           END-EXEC\r\n           MOVE WS-DATE TO EM-DATE\r\n           MOVE WS-TIME TO EM-TIME\r\n      * Write output message to TDQ\r\n           EXEC CICS LINK PROGRAM('LGSTSQ')\r\n                     COMMAREA(ERROR-MSG)\r\n                     LENGTH(LENGTH OF ERROR-MSG)\r\n           END-EXEC.\r\n      * Write 90 bytes or as much as we have of commarea to TDQ\r\n           IF EIBCALEN > 0 THEN\r\n             IF EIBCALEN < 91 THEN\r\n               MOVE DFHCOMMAREA(1:EIBCALEN) TO CA-DATA\r\n               EXEC CICS LINK PROGRAM('LGSTSQ')\r\n                         COMMAREA(CA-ERROR-MSG)\r\n                         LENGTH(LENGTH OF CA-ERROR-MSG)\r\n               END-EXEC\r\n             ELSE\r\n               MOVE DFHCOMMAREA(1:90) TO CA-DATA\r\n               EXEC CICS LINK PROGRAM('LGSTSQ')\r\n                         COMMAREA(CA-ERROR-MSG)\r\n                         LENGTH(LENGTH OF CA-ERROR-MSG)\r\n               END-EXEC\r\n             END-IF\r\n           END-IF.\r\n           EXIT.",
+      "committed": false,
+      "references": [
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 232 304",
+          "lineNumber": 293
+        },
+        {
+          "uniqueId": "Program:COBOL:LGACDB01 232 304",
+          "lineNumber": 264
+        }
+      ],
+      "uniqueId": "Program:COBOL:LGACDB01 312 345",
+      "usedParagraphs": [],
+      "usedCopybookParagraphs": [],
+      "tags": [
+        "paragraph"
+      ],
+      "metadata": {
+        "programs": [
+          "Program:COBOL:LGACDB01"
+        ]
+      }
+    }
+  }
+}

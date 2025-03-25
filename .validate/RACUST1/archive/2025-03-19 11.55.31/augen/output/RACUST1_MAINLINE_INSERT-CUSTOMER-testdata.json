@@ -1,0 +1,2256 @@
+[{
+  "test_id" : 1,
+  "status" : "SUCCESS",
+  "startingparagraph" : "INSERT-CUSTOMER OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "LGAC-NCS",
+        "type_str" : "X(2)"
+      },
+      "value" : "ON",
+      "stmtline" : 555
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DB2-CUSTOMERNUM-INT OF DB2-OUT-INTEGERS",
+        "type_str" : "S9(9)"
+      },
+      "value" : 1,
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(4)"
+      },
+      "value" : "xxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(100)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 556,
+      "nextexecutableline" : 579,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAf \u0002\u0000\u0000\u0000\u0000\u0001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0010É \u0001¦ç\u0002yf\u0002\tã\u0002E\t\u0001DÁã\u0010AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCAID OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCABC OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 75907074 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCODE OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 0 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRM OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "\u0001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRML OF SQLERRM OF SQLCA",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 260 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRMC OF SQLERRM OF SQLCA",
+          "type_str" : "X(70)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRP OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(1)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 275857409 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(2)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 141182978 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(3)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 78153218 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(4)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 84559362 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(5)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ -989513727 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(6)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ -999995888 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN0 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN1 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN2 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN3 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN4 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN5 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN6 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN7 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLEXT OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN8 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN9 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARNA OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLSTATE OF SQLEXT OF SQLCA",
+          "type_str" : "X(5)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAA" ]
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( :DB2-CUSTOMERNUM-INT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "X(16)"
+      },
+      "stmtline" : 621
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCA",
+        "type_str" : ""
+      },
+      "stmtline" : 621
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-CUSTOMER-NUM OF DFHCOMMAREA-1",
+        "type_str" : "9(10)"
+      },
+      "stmtline" : 621
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 556,
+      "nextexecutableline" : 579,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DB2-CUSTOMERNUM-INT OF DB2-OUT-INTEGERS",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "CUSTOMER.CUSTOMERNUMBER"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.FIRSTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.LASTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.DATEOFBIRTH"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENUMBER"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "CUSTOMER.POSTCODE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEMOBILE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEHOME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(100)"
+        },
+        "resource_var" : "CUSTOMER.EMAILADDRESS"
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( :DB2-CUSTOMERNUM-INT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    } ]
+  },
+  "pathlines" : [ 549, 553, 555, 556, 579, 619, 621 ]
+},
+{
+  "test_id" : 2,
+  "status" : "SUCCESS",
+  "startingparagraph" : "INSERT-CUSTOMER OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "LGAC-NCS",
+        "type_str" : "X(2)"
+      },
+      "value" : "€€",
+      "stmtline" : 555
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(4)"
+      },
+      "value" : "xxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(100)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 585,
+      "nextexecutableline" : 608,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA«ç\u0001\u0000\u0000\u0000\u0000\u0001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA«ç\u0001 \u0001\u0010hç\u0001}f\u0000\u0000ç\u0001Ç\u0000\u0001AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCAID OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCABC OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143280129 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCODE OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 0 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRM OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "\u0001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRML OF SQLERRM OF SQLCA",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 8449 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRMC OF SQLERRM OF SQLCA",
+          "type_str" : "X(70)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRP OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(1)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143280129 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(2)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 136855553 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(3)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 277366785 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(4)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ -796524544 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(5)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 134891521 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(6)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 73924609 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN0 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN1 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN2 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN3 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN4 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN5 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN6 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN7 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLEXT OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN8 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN9 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARNA OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLSTATE OF SQLEXT OF SQLCA",
+          "type_str" : "X(5)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAA" ]
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( DEFAULT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 614,
+      "nextexecutableline" : 619,
+      "stmt_type" : "SQL-SET",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DB2-CUSTOMERNUM-INT OF DB2-OUT-INTEGERS",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 200040400 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA \u0001\u0000\u0000\u0001K\u0001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0012\t\u0002e k\u0000\u0001«ç\u0001\u0011\t\u0001Ç\u0002AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCAID OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCABC OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 571097089 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCODE OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 466 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRM OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "\u0001AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRML OF SQLERRM OF SQLCA",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 8449 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRMC OF SQLERRM OF SQLCA",
+          "type_str" : "X(70)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRP OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(1)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 302331394 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(2)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 545603588 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(3)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143785985 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(4)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143280129 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(5)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 285554177 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(6)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 141047298 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN0 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN1 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN2 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN3 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN4 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN5 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN6 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN7 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLEXT OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN8 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN9 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARNA OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLSTATE OF SQLEXT OF SQLCA",
+          "type_str" : "X(5)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAA" ]
+      } ],
+      "info" : "SET :DB2-CUSTOMERNUM-INT = IDENTITY_VAL_LOCAL()"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "X(16)"
+      },
+      "stmtline" : 621
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCA",
+        "type_str" : ""
+      },
+      "stmtline" : 621
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DB2-CUSTOMERNUM-INT OF DB2-OUT-INTEGERS",
+        "type_str" : "S9(9)"
+      },
+      "stmtline" : 621
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-CUSTOMER-NUM OF DFHCOMMAREA-1",
+        "type_str" : "9(10)"
+      },
+      "stmtline" : 621
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 585,
+      "nextexecutableline" : 608,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.FIRSTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.LASTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.DATEOFBIRTH"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENUMBER"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "CUSTOMER.POSTCODE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEMOBILE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEHOME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(100)"
+        },
+        "resource_var" : "CUSTOMER.EMAILADDRESS"
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( DEFAULT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 614,
+      "nextexecutableline" : 619,
+      "stmt_type" : "SQL-SET",
+      "instance" : 1,
+      "output" : [ ],
+      "info" : "SET :DB2-CUSTOMERNUM-INT = IDENTITY_VAL_LOCAL()"
+    } ]
+  },
+  "pathlines" : [ 549, 553, 555, 585, 608, 614, 619, 621 ]
+},
+{
+  "test_id" : 3,
+  "status" : "SUCCESS",
+  "startingparagraph" : "INSERT-CUSTOMER OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "LGAC-NCS",
+        "type_str" : "X(2)"
+      },
+      "value" : "ON",
+      "stmtline" : 555
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DB2-CUSTOMERNUM-INT OF DB2-OUT-INTEGERS",
+        "type_str" : "S9(9)"
+      },
+      "value" : 0,
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(4)"
+      },
+      "value" : "xxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(100)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 556
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 556,
+      "nextexecutableline" : 579,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAÃ\u0000\u0000Ù<\u0019\u0002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\u0010i \u0002iç\u0001\u0011\u0001\u0000\u0000\u0000\u0010k \u0001\u0000Á\u0000AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCAID OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCABC OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 73793536 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCODE OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ -692 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRM OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "\u0019\u0002AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRML OF SQLERRM OF SQLCA",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 6402 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRMC OF SQLERRM OF SQLCA",
+          "type_str" : "X(70)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRP OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(1)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 277430274 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(2)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143214593 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(3)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 285870081 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(4)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 655360 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(5)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 278020097 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(6)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 6633472 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN0 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN1 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN2 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN3 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN4 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN5 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN6 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN7 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLEXT OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN8 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN9 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARNA OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLSTATE OF SQLEXT OF SQLCA",
+          "type_str" : "X(5)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAA" ]
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( :DB2-CUSTOMERNUM-INT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 581,
+      "nextexecutableline" : 582,
+      "stmt_type" : "PERFORM",
+      "instance" : 1,
+      "input" : [ ],
+      "info" : "RACUST1/_TOPSECTION/WRITE-ERROR-MESSAGE"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 582,
+      "nextexecutableline" : -1,
+      "stmt_type" : "CICS-RETURN",
+      "instance" : 1,
+      "input" : [ ],
+      "info" : "RETURN"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "X(16)"
+      },
+      "stmtline" : 582
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCA",
+        "type_str" : ""
+      },
+      "stmtline" : 582
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-RETURN-CODE OF DFHCOMMAREA-1",
+        "type_str" : "9(2)"
+      },
+      "stmtline" : 582
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 556,
+      "nextexecutableline" : 579,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DB2-CUSTOMERNUM-INT OF DB2-OUT-INTEGERS",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "CUSTOMER.CUSTOMERNUMBER"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.FIRSTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.LASTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.DATEOFBIRTH"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENUMBER"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "CUSTOMER.POSTCODE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEMOBILE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEHOME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(100)"
+        },
+        "resource_var" : "CUSTOMER.EMAILADDRESS"
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( :DB2-CUSTOMERNUM-INT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 581,
+      "nextexecutableline" : 582,
+      "stmt_type" : "PERFORM",
+      "instance" : 1,
+      "output" : [ ],
+      "info" : "RACUST1/_TOPSECTION/WRITE-ERROR-MESSAGE"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 582,
+      "nextexecutableline" : -1,
+      "stmt_type" : "CICS-RETURN",
+      "instance" : 1,
+      "output" : [ ],
+      "info" : "RETURN"
+    } ]
+  },
+  "pathlines" : [ 549, 553, 555, 556, 579, 580, 581, 582 ]
+},
+{
+  "test_id" : 4,
+  "status" : "SUCCESS",
+  "startingparagraph" : "INSERT-CUSTOMER OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "LGAC-NCS",
+        "type_str" : "X(2)"
+      },
+      "value" : "\"&",
+      "stmtline" : 555
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(4)"
+      },
+      "value" : "xxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(20)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+        "type_str" : "X(100)"
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 585
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 585,
+      "nextexecutableline" : 608,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAf\u0001Ü\u0000\u0000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAÁ\u0002yç\u0000fç\u0001h\u0001Ø\u0000\u0001ÁØ\u0001AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCAID OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCABC OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143014401 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLCODE OF SQLCA",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ -970 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRM OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "\u0000\u0000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRML OF SQLERRM OF SQLCA",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 0 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRMC OF SQLERRM OF SQLCA",
+          "type_str" : "X(70)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRP OF SQLCA",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(1)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 73741826 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(2)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 145246208 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(3)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 143017985 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(4)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 151685121 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(5)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 75497473 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLERRD OF SQLCA(6)",
+          "type_str" : "S9(9)"
+        },
+        "resource_var" : "",
+        "values" : [ 73760769 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN0 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN1 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN2 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN3 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN4 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN5 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN6 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN7 OF SQLWARN OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLEXT OF SQLCA",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN8 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARN9 OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLWARNA OF SQLEXT OF SQLCA",
+          "type_str" : "X"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "SQLSTATE OF SQLEXT OF SQLCA",
+          "type_str" : "X(5)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAA" ]
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( DEFAULT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 610,
+      "nextexecutableline" : 611,
+      "stmt_type" : "PERFORM",
+      "instance" : 1,
+      "input" : [ ],
+      "info" : "RACUST1/_TOPSECTION/WRITE-ERROR-MESSAGE"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 611,
+      "nextexecutableline" : -1,
+      "stmt_type" : "CICS-RETURN",
+      "instance" : 1,
+      "input" : [ ],
+      "info" : "RETURN"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "X(16)"
+      },
+      "stmtline" : 611
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCA",
+        "type_str" : ""
+      },
+      "stmtline" : 611
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-RETURN-CODE OF DFHCOMMAREA-1",
+        "type_str" : "9(2)"
+      },
+      "stmtline" : 611
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 585,
+      "nextexecutableline" : 608,
+      "stmt_type" : "SQL-INSERT",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-FIRST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.FIRSTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-LAST-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.LASTNAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-DOB OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "CUSTOMER.DATEOFBIRTH"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NAME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENAME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-HOUSE-NUM OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "CUSTOMER.HOUSENUMBER"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-POSTCODE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "CUSTOMER.POSTCODE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-MOBILE OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEMOBILE"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-PHONE-HOME OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(20)"
+        },
+        "resource_var" : "CUSTOMER.PHONEHOME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-EMAIL-ADDRESS OF CA-CUSTOMER-REQUEST OF DFHCOMMAREA-1",
+          "type_str" : "X(100)"
+        },
+        "resource_var" : "CUSTOMER.EMAILADDRESS"
+      } ],
+      "info" : "INSERT INTO CUSTOMER ( CUSTOMERNUMBER, FIRSTNAME, LASTNAME, DATEOFBIRTH, HOUSENAME, HOUSENUMBER, POSTCODE, PHONEMOBILE, PHONEHOME, EMAILADDRESS ) VALUES ( DEFAULT, :CA-FIRST-NAME, :CA-LAST-NAME, :CA-DOB, :CA-HOUSE-NAME, :CA-HOUSE-NUM, :CA-POSTCODE, :CA-PHONE-MOBILE, :CA-PHONE-HOME, :CA-EMAIL-ADDRESS )"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 610,
+      "nextexecutableline" : 611,
+      "stmt_type" : "PERFORM",
+      "instance" : 1,
+      "output" : [ ],
+      "info" : "RACUST1/_TOPSECTION/WRITE-ERROR-MESSAGE"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 611,
+      "nextexecutableline" : -1,
+      "stmt_type" : "CICS-RETURN",
+      "instance" : 1,
+      "output" : [ ],
+      "info" : "RETURN"
+    } ]
+  },
+  "pathlines" : [ 549, 553, 555, 585, 608, 609, 610, 611 ]
+}
+]

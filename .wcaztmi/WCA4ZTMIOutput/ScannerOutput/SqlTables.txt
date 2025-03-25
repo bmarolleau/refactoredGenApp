@@ -1,0 +1,9 @@
+SqlTableID	TableName	NumOfFields	IsUsed	WasDeclared	OccurID	szUser	szDataBase
+1	CUSTOMER	10	0	-1	161		1	
+2	CUSTOMER_SECURE	4	0	-1	162		1	
+3	POLICY	10	0	-1	163		1	
+4	ENDOWMENT	9	0	-1	164		1	
+5	HOUSE	7	0	-1	165		1	
+6	MOTOR	10	0	-1	166		1	
+7	COMMERCIAL	20	0	-1	167		1	
+8	CLAIM	7	0	-1	168		1	

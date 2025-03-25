@@ -1,0 +1,17 @@
+        1 //COMP JOB 241901,'COB GENERATE',NOTIFY=&SYSUID,CLASS=A,MSGCLASS=H,     JOB00277
+          //       REGION=200M
+          //*
+          //* LICENSED MATERIALS - PROPERTY OF IBM
+          //*
+          //* "RESTRICTED MATERIALS OF IBM"
+          //*
+          //* CB12\
+          //*
+          //* (C) COPYRIGHT IBM CORP. 2011, 2013 ALL RIGHTS RESERVED
+          //*
+          //*  US GOVERNMENT USERS RESTRICTED RIGHTS - USE, DUPLICATION,
+          //*  OR DISCLOSURE RESTRICTED BY GSA ADP SCHEDULE
+          //*  CONTRACT WITH IBM CORPORATION
+          //*
+          //*-------------------------------------------------------------------*
+          IEFC653I SUBSTITUTION JCL - 241901,'COB GENERATE',NOTIFY=IBMUSER,CLASS=A,MSGCLASS=H,REGION=200M

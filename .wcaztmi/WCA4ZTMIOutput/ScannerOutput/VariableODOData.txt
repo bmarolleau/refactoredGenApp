@@ -1,0 +1,1 @@
+VarId	MinOccurs	MaxOccurs	DependingOnID

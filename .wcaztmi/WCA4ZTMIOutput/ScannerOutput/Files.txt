@@ -1,0 +1,1 @@
+FileID	Name	LogicalName	TypeCode	Reserve	Padding	IsFD	bExternal	bGlobal	MinBlockSize	MaxBlockSize	MinRecordSize	MaxRecordSize	LabelStandard	LabelOmmited	LabelDataName	Footing	LinesAtTop	LinesAtBottom	RecordingMode	CodeSet	Passvord	RecordKey	RelativeKey	HasAlternateKeys	Permissions	IsReferenced	OccurID	ProgID	OpenType	SelectOccurID	FDOccurID

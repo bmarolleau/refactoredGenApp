@@ -1,0 +1,56 @@
+{
+  "refactoringTechniques": {
+    "Program:COBOL:LGACDB01 216 228": [
+      {
+        "blockType": "independent block",
+        "callerCode": {
+          "action": "Delete/Comment",
+          "information": "This block Program:COBOL:LGACDB01 216 228 is specific to RACUST. As a result, please eliminate this block from the original code."
+        },
+        "serviceCode": {
+          "action": "No change",
+          "information": "This block Program:COBOL:LGACDB01 216 228 remains unchanged in RACUST."
+        }
+      }
+    ],
+    "Program:COBOL:LGACDB01 312 345": [
+      {
+        "blockType": "independent block",
+        "callerCode": {
+          "action": "Delete/Comment",
+          "information": "This block Program:COBOL:LGACDB01 312 345 is specific to RACUST. As a result, please eliminate this block from the original code."
+        },
+        "serviceCode": {
+          "action": "No change",
+          "information": "This block Program:COBOL:LGACDB01 312 345 remains unchanged in RACUST."
+        }
+      }
+    ],
+    "Program:COBOL:LGACDB01 232 304": [
+      {
+        "blockType": "independent block",
+        "callerCode": {
+          "action": "Delete/Comment",
+          "information": "This block Program:COBOL:LGACDB01 232 304 is specific to RACUST. As a result, please eliminate this block from the original code."
+        },
+        "serviceCode": {
+          "action": "No change",
+          "information": "This block Program:COBOL:LGACDB01 232 304 remains unchanged in RACUST."
+        }
+      }
+    ],
+    "Program:COBOL:LGACDB01 141 209": [
+      {
+        "blockType": "starting block",
+        "callerCode": {
+          "action": "Edit",
+          "information": "This block Program:COBOL:LGACDB01 141 209 initiates the execution of RACUST. Consequently, within the original code, substitute this block with a REST/local call to access RACUST."
+        },
+        "serviceCode": {
+          "action": "No change",
+          "information": "This block Program:COBOL:LGACDB01 141 209 remains unchanged in RACUST."
+        }
+      }
+    ]
+  }
+}

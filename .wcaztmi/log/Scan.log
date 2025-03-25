@@ -1,0 +1,48 @@
+adscan Version 1.0.7 - 64bit
+RACUST1.CBL	CBL			0	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			14	DEFVAR	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			61	LGPOLICY	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			67	SQLCA	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			71	DGENAPP	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			77	LGCMAREA	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			79	CICS1	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			79	DFHEIBLK	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			79	DFHEIVAR	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL			79	DIBSTAT	RACUST1.CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBTRNID	88	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBTRMID	89	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBTASKN	90	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBCALEN	101	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBCALEN	109	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBCALEN	117	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBCALEN	256	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	E-EMSG10010	Error: Variable not in symbol table: EIBCALEN	257	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	S-EMSG220	Error: File could not be opened: DEFVAR	14	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	S-EMSG220	Error: File could not be opened: CICS1	79	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	S-EMSG220	Error: File could not be opened: DFHEIBLK	79	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	S-EMSG220	Error: File could not be opened: DFHEIVAR	79	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+RACUST1.CBL	CBL	S-EMSG220	Error: File could not be opened: DIBSTAT	79	RACUST1.CBL	CBL	Tue Mar 18 05:35:28 2025
+Tue Mar 18 05:35:28 2025
+ Finishing...
+Tue Mar 18 05:35:28 2025
+ Entering Dynamic Calls (testing 15).
+Tue Mar 18 05:35:28 2025
+ Dynamic Calls: pass 1 found 5
+Tue Mar 18 05:35:28 2025
+ Dynamic Calls: pass 2 found 0
+Tue Mar 18 05:35:28 2025
+ Dynamic Calls: pass 3 found 0
+Tue Mar 18 05:35:28 2025
+ Callgraph done.
+Tue Mar 18 05:35:28 2025
+ Scanned lines of code: 506
+[I] [18/03/25, 05.35.28]: The saving of AD-specific information has STARTED!
+ 
+[I] [18/03/25, 05.35.28]: Post processing after the scanning phase ...
+[I] [18/03/25, 05.35.29]: Creating the specialized Storage Object ...
+[I] [18/03/25, 05.35.29]: Initializing the specialized Storage Object ...
+[I] [18/03/25, 05.35.31]: Serializing parsed/raw data to the specialized Storage Support ...
+[I] [18/03/25, 05.35.32]: Post processing after persistence of information ...
+[I] [18/03/25, 05.35.34]: Exiting from saving process ...
+ 
+[I] [18/03/25, 05.35.35]: The saving of AD-specific information has ENDED!

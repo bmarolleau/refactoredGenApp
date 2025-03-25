@@ -1,0 +1,4237 @@
+[{
+  "test_id" : 1,
+  "status" : "SUCCESS",
+  "startingparagraph" : "WRITE-ERROR-MESSAGE OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCODE OF SQLCA",
+        "type_str" : "S9(9)"
+      },
+      "value" : -487975995,
+      "stmtline" : 625
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-ABSTIME",
+        "type_str" : "S9(8)"
+      },
+      "value" : 0,
+      "stmtline" : 627
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-DATE",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 629
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-TIME",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 629
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "ERROR-MSG",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 636
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 627,
+      "nextexecutableline" : 629,
+      "stmt_type" : "CICS-ASKTIME",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME",
+        "values" : [ -64868607 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "ASKTIME ABSTIME(WS-ABSTIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 629,
+      "nextexecutableline" : 633,
+      "stmt_type" : "CICS-FORMATTIME",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-DATE",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "MMDDYYYY",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-TIME",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "TIME",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "FORMATTIME ABSTIME(WS-ABSTIME) MMDDYYYY(WS-DATE) TIME(WS-TIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 636,
+      "nextexecutableline" : 641,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-DATE OF ERROR-MSG",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-TIME OF ERROR-MSG",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-CUSNUM OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-POLNUM OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(16)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-SQLRC OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "+9(5)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ -8 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(ERROR-MSG) LENGTH(LENGTH OF ERROR-MSG)"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLRC OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "+9(5)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-ABSTIME",
+        "type_str" : "S9(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-TIME",
+        "type_str" : "X(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-DATE",
+        "type_str" : "X(10)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-DATE OF ERROR-MSG",
+        "type_str" : "X(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-TIME OF ERROR-MSG",
+        "type_str" : "X(6)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DFHEIBLK",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "ERROR-MSG",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 627,
+      "nextexecutableline" : 629,
+      "stmt_type" : "CICS-ASKTIME",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME"
+      } ],
+      "info" : "ASKTIME ABSTIME(WS-ABSTIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 629,
+      "nextexecutableline" : 633,
+      "stmt_type" : "CICS-FORMATTIME",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-DATE",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "MMDDYYYY"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-TIME",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "TIME"
+      } ],
+      "info" : "FORMATTIME ABSTIME(WS-ABSTIME) MMDDYYYY(WS-DATE) TIME(WS-TIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 636,
+      "nextexecutableline" : 641,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "LENGTH"
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(ERROR-MSG) LENGTH(LENGTH OF ERROR-MSG)"
+    } ]
+  },
+  "pathlines" : [ 623, 625, 627, 629, 633, 634, 636, 641, 656 ]
+},
+{
+  "test_id" : 2,
+  "status" : "SUCCESS",
+  "startingparagraph" : "WRITE-ERROR-MESSAGE OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCODE OF SQLCA",
+        "type_str" : "S9(9)"
+      },
+      "value" : -808549919,
+      "stmtline" : 625
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-ABSTIME",
+        "type_str" : "S9(8)"
+      },
+      "value" : 0,
+      "stmtline" : 627
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-DATE",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 629
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-TIME",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 629
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "ERROR-MSG",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 636
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DFHCOMMAREA-1(1:20)",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 643
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-ERROR-MSG",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 644
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 627,
+      "nextexecutableline" : 629,
+      "stmt_type" : "CICS-ASKTIME",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME",
+        "values" : [ -66043903 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "ASKTIME ABSTIME(WS-ABSTIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 629,
+      "nextexecutableline" : 633,
+      "stmt_type" : "CICS-FORMATTIME",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-DATE",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "MMDDYYYY",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-TIME",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "TIME",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "FORMATTIME ABSTIME(WS-ABSTIME) MMDDYYYY(WS-DATE) TIME(WS-TIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 636,
+      "nextexecutableline" : 641,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-DATE OF ERROR-MSG",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-TIME OF ERROR-MSG",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-CUSNUM OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-POLNUM OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(16)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-SQLRC OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "+9(5)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A002{AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 20 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(ERROR-MSG) LENGTH(LENGTH OF ERROR-MSG)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 644,
+      "nextexecutableline" : 656,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-DATA OF CA-ERROR-MSG",
+          "type_str" : "X(90)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(CA-ERROR-MSG) LENGTH(LENGTH OF CA-ERROR-MSG)"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLRC OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "+9(5)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-ABSTIME",
+        "type_str" : "S9(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-TIME",
+        "type_str" : "X(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-DATE",
+        "type_str" : "X(10)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-DATE OF ERROR-MSG",
+        "type_str" : "X(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-TIME OF ERROR-MSG",
+        "type_str" : "X(6)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "ERROR-MSG",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-DATA OF CA-ERROR-MSG",
+        "type_str" : "X(90)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DFHEIBLK",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-ERROR-MSG",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 627,
+      "nextexecutableline" : 629,
+      "stmt_type" : "CICS-ASKTIME",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME"
+      } ],
+      "info" : "ASKTIME ABSTIME(WS-ABSTIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 629,
+      "nextexecutableline" : 633,
+      "stmt_type" : "CICS-FORMATTIME",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-DATE",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "MMDDYYYY"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-TIME",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "TIME"
+      } ],
+      "info" : "FORMATTIME ABSTIME(WS-ABSTIME) MMDDYYYY(WS-DATE) TIME(WS-TIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 636,
+      "nextexecutableline" : 641,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "LENGTH"
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(ERROR-MSG) LENGTH(LENGTH OF ERROR-MSG)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 644,
+      "nextexecutableline" : 656,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "LENGTH"
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(CA-ERROR-MSG) LENGTH(LENGTH OF CA-ERROR-MSG)"
+    } ]
+  },
+  "pathlines" : [ 623, 625, 627, 629, 633, 634, 636, 641, 642, 643, 644, 656 ]
+},
+{
+  "test_id" : 3,
+  "status" : "SUCCESS",
+  "startingparagraph" : "WRITE-ERROR-MESSAGE OF MAINLINE",
+  "input" : {
+    "cobol_program_inputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "SQLCODE OF SQLCA",
+        "type_str" : "S9(9)"
+      },
+      "value" : -109037900,
+      "stmtline" : 625
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-ABSTIME",
+        "type_str" : "S9(8)"
+      },
+      "value" : 0,
+      "stmtline" : 627
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-DATE",
+        "type_str" : "X(10)"
+      },
+      "value" : "xxxxxxxxxx",
+      "stmtline" : 629
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-TIME",
+        "type_str" : "X(8)"
+      },
+      "value" : "xxxxxxxx",
+      "stmtline" : 629
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "ERROR-MSG",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 636
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DFHCOMMAREA-1(1:90)",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 649
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-ERROR-MSG",
+        "type_str" : ""
+      },
+      "value" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "stmtline" : 650
+    } ],
+    "cobol_resource_inputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 627,
+      "nextexecutableline" : 629,
+      "stmt_type" : "CICS-ASKTIME",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME",
+        "values" : [ 1187585 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "ASKTIME ABSTIME(WS-ABSTIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 629,
+      "nextexecutableline" : 633,
+      "stmt_type" : "CICS-FORMATTIME",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-DATE",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "MMDDYYYY",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-TIME",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "TIME",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "FORMATTIME ABSTIME(WS-ABSTIME) MMDDYYYY(WS-DATE) TIME(WS-TIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 636,
+      "nextexecutableline" : 641,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-DATE OF ERROR-MSG",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-TIME OF ERROR-MSG",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-CUSNUM OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-POLNUM OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-SQLREQ OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "X(16)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EM-SQLRC OF EM-VARIABLE OF ERROR-MSG",
+          "type_str" : "+9(5)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A800{AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 8000 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(ERROR-MSG) LENGTH(LENGTH OF ERROR-MSG)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 650,
+      "nextexecutableline" : 656,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "input" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-DATA OF CA-ERROR-MSG",
+          "type_str" : "X(90)"
+        },
+        "resource_var" : "COMMAREA",
+        "values" : [ "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIBLK",
+          "type_str" : ""
+        },
+        "resource_var" : "",
+        "values" : [ "000000A000000AAAAA000000AAAAA000A000A000AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0000000A0000000AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTIME OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDATE OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRNID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTASKN OF DFHEIBLK",
+          "type_str" : "S9(7)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBTRMID OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "DFHEIGDI OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCPOSN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCALEN OF DFHEIBLK",
+          "type_str" : "S9(4)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBAID OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFN OF DFHEIBLK",
+          "type_str" : "X(2)"
+        },
+        "resource_var" : "",
+        "values" : [ "AA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRCODE OF DFHEIBLK",
+          "type_str" : "X(6)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBDS OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBREQID OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRSRCE OF DFHEIBLK",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAAAAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFREE OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRECV OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFIL01 OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBATT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBEOC OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBFMH OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCOMPL OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSIG OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBCONF OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERR OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBERRCD OF DFHEIBLK",
+          "type_str" : "X(4)"
+        },
+        "resource_var" : "",
+        "values" : [ "AAAA" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBSYNRB OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBNODAT OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRESP2 OF DFHEIBLK",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "",
+        "values" : [ 1 ]
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "EIBRLDBK OF DFHEIBLK",
+          "type_str" : "X(1)"
+        },
+        "resource_var" : "",
+        "values" : [ "A" ]
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(CA-ERROR-MSG) LENGTH(LENGTH OF CA-ERROR-MSG)"
+    } ]
+  },
+  "output" : {
+    "cobol_program_outputs" : [ {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-SQLRC OF EM-VARIABLE OF ERROR-MSG",
+        "type_str" : "+9(5)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-ABSTIME",
+        "type_str" : "S9(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-TIME",
+        "type_str" : "X(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "WS-DATE",
+        "type_str" : "X(10)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-DATE OF ERROR-MSG",
+        "type_str" : "X(8)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "EM-TIME OF ERROR-MSG",
+        "type_str" : "X(6)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "ERROR-MSG",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-DATA OF CA-ERROR-MSG",
+        "type_str" : "X(90)"
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "DFHEIBLK",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    }, {
+      "cobol_var" : {
+        "program" : "RACUST1",
+        "scope" : "PROGRAM",
+        "var" : "CA-ERROR-MSG",
+        "type_str" : ""
+      },
+      "stmtline" : 656
+    } ],
+    "cobol_resource_outputs" : [ {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 627,
+      "nextexecutableline" : 629,
+      "stmt_type" : "CICS-ASKTIME",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME"
+      } ],
+      "info" : "ASKTIME ABSTIME(WS-ABSTIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 629,
+      "nextexecutableline" : 633,
+      "stmt_type" : "CICS-FORMATTIME",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-ABSTIME",
+          "type_str" : "S9(8)"
+        },
+        "resource_var" : "ABSTIME"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-DATE",
+          "type_str" : "X(10)"
+        },
+        "resource_var" : "MMDDYYYY"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "WS-TIME",
+          "type_str" : "X(8)"
+        },
+        "resource_var" : "TIME"
+      } ],
+      "info" : "FORMATTIME ABSTIME(WS-ABSTIME) MMDDYYYY(WS-DATE) TIME(WS-TIME)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 636,
+      "nextexecutableline" : 641,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "LENGTH"
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(ERROR-MSG) LENGTH(LENGTH OF ERROR-MSG)"
+    }, {
+      "cobolprogram" : "RACUST1",
+      "stmtline" : 650,
+      "nextexecutableline" : 656,
+      "stmt_type" : "CICS-LINK",
+      "instance" : 1,
+      "output" : [ {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "COMMAREA"
+      }, {
+        "cobol_var" : {
+          "program" : "RACUST1",
+          "scope" : "PROGRAM",
+          "var" : "CA-ERROR-MSG",
+          "type_str" : ""
+        },
+        "resource_var" : "LENGTH"
+      } ],
+      "info" : "LINK PROGRAM('LGSTSQ') COMMAREA(CA-ERROR-MSG) LENGTH(LENGTH OF CA-ERROR-MSG)"
+    } ]
+  },
+  "pathlines" : [ 623, 625, 627, 629, 633, 634, 636, 641, 642, 649, 650, 656 ]
+}
+]

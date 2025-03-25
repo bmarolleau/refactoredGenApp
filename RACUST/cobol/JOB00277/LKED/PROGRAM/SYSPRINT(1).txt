@@ -1,0 +1,461 @@
+1z/OS V2 R5 BINDER     11:16:07 TUESDAY MARCH 18, 2025
+ BATCH EMULATOR  JOB(COMP    ) STEP(PROGRAM ) PGM= HEWL      PROCEDURE(LKED    )
+ IEW2278I B352 INVOCATION PARAMETERS - LIST,XREF,RENT,NAME=RACUST1
+ IEW2322I 1220  1     INCLUDE SYSLIB(DFHECI)
+ IEW2322I 1220  2     INCLUDE SYSLIB(DSNCLI)
+
+
+1                                       C R O S S - R E F E R E N C E  T A B L E
+                                        _________________________________________
+
+ TEXT CLASS = C_CODE
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+       24 RACUST1                        24 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       2C RACUST1                        2C A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       30 RACUST1                        30 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       34 RACUST1                        34 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       38 RACUST1                        38 V-CON | IGZXBST4         IGZXBST4                        0 B_TEXT           |
+       3C RACUST1                        3C A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       44 RACUST1                        44 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     15E0 RACUST1                      15E0 Q-CON | RACUST1#S        $NON-RELOCATABLE               10 C_WSA            |
+     15E4 RACUST1                      15E4 V-CON | DFHEI1           DFHECI                          8 B_TEXT           |
+     15E8 RACUST1                      15E8 V-CON | DSNHLI           DSNCLI                          0 B_TEXT           |
+     15EC RACUST1                      15EC V-CON | IGZXPRS          IGZXPRS                         0 B_TEXT           |
+     15F0 RACUST1                      15F0 V-CON | IGZXCMSG         IGZXCMSG                        0 B_TEXT           |
+     15F4 RACUST1                      15F4 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     15F8 RACUST1                      15F8 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     15FC RACUST1                      15FC V-CON | IGZXVMO          IGZXVMO                         0 B_TEXT           |
+     1600 RACUST1                      1600 V-CON | IGZXRT1          IGZXRT1                         0 B_TEXT           |
+     1620 RACUST1                      1620 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     162C RACUST1                      162C A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     16EC RACUST1                      16EC A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     1978 RACUST1                      1978 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     1C5C RACUST1                      1C5C A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     1C5C RACUST1                      1C5C A-CON | CEESTART         CEESTART                        0 B_TEXT           |
+     1C74 RACUST1                      1C74 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+     1C78 RACUST1                      1C78 V-CON | CEESTART         CEESTART                        0 B_TEXT           |
+     1C7C RACUST1                      1C7C V-CON | CEEBETBL         CEEBETBL                        0 B_TEXT           |
+     1CCC RACUST1                      1CCC Q-CON | RACUST1#S        $NON-RELOCATABLE               10 C_WSA            |
+
+
+ TEXT CLASS = B_TEXT
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+       B4 CEESG004                       14 A-CON | IGZEOPT          $UNRESOLVED(W)                                     |
+       B8 CEESG004                       18 A-CON | IGZETUN          $UNRESOLVED(W)                                     |
+       BC CEESG004                       1C A-CON | IGZXRES1         $UNRESOLVED(W)                                     |
+       C0 CEESG004                       20 A-CON | IEWBLIT          IEWBLIT                         0 B_LIT            |
+      588 IGZXBST4                      450 V-CON | CEEINT           CEEBPIRA                        0 B_TEXT           |
+      58C IGZXBST4                      454 V-CON | CEEARLU          CEEARLU                         0 B_TEXT           |
+      590 IGZXBST4                      458 A-CON | CEESG004         CEESG004                        0 B_TEXT           |
+      61C CEEBETBL                        4 V-CON | CEEBXITA         $UNRESOLVED(W)                                     |
+      620 CEEBETBL                        8 V-CON | CEEBINT          CEEBINT                         0 B_TEXT           |
+      624 CEEBETBL                        C V-CON | CEEBLLST         CEEBLLST                        0 B_TEXT           |
+      628 CEEBETBL                       10 V-CON | CEEUOPT          $UNRESOLVED(W)                                     |
+      62C CEEBETBL                       14 V-CON | CEEBTRM          CEEBTRM                         0 B_TEXT           |
+      634 CEEBETBL                       1C V-CON | CEEBPUBT         CEEBPUBT                        0 B_TEXT           |
+
+
+1                                       C R O S S - R E F E R E N C E  T A B L E
+                                        _________________________________________
+
+ TEXT CLASS = B_TEXT
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+      638 CEEBETBL                       20 V-CON | IEWBLIT          IEWBLIT                         0 B_LIT            |
+      69C CEESTART                       5C A-CON | CEEMAIN          $UNRESOLVED(W)                                     |
+      6AC CEESTART                       6C C-LEN |                  $NON-RELOCATABLE                  B_PRV            |
+      6D8 CEESTART                       98 A-CON | CEEFMAIN         $UNRESOLVED(W)                                     |
+      6E4 CEESTART                       A4 A-CON | CEEBETBL         CEEBETBL                        0 B_TEXT           |
+      6E8 CEESTART                       A8 A-CON | CEEROOTA         $UNRESOLVED(W)                                     |
+      6EC CEESTART                       AC A-CON | CEEROOTD         $UNRESOLVED(W)                                     |
+      7CC CEEBTRM                        6C A-CON | CEEBPUBT         CEEBPUBT                        0 B_TEXT           |
+      8B8 CEEBLLST                       10 A-CON | CEESG000         $UNRESOLVED(W)                                     |
+      8BC CEEBLLST                       14 A-CON | CEESG001         $UNRESOLVED(W)                                     |
+      8C0 CEEBLLST                       18 A-CON | CEESG002         $UNRESOLVED(W)                                     |
+      8C4 CEEBLLST                       1C A-CON | CEESG003         $UNRESOLVED(W)                                     |
+      8C8 CEEBLLST                       20 A-CON | CEESG004         CEESG004                        0 B_TEXT           |
+      8CC CEEBLLST                       24 A-CON | CEESG005         $UNRESOLVED(W)                                     |
+      8D0 CEEBLLST                       28 A-CON | CEESG006         $UNRESOLVED(W)                                     |
+      8D4 CEEBLLST                       2C A-CON | CEESG007         $UNRESOLVED(W)                                     |
+      8D8 CEEBLLST                       30 A-CON | CEESG008         $UNRESOLVED(W)                                     |
+      8DC CEEBLLST                       34 A-CON | CEESG009         $UNRESOLVED(W)                                     |
+      8E0 CEEBLLST                       38 A-CON | CEESG010         $UNRESOLVED(W)                                     |
+      8E4 CEEBLLST                       3C A-CON | CEESG011         $UNRESOLVED(W)                                     |
+      8E8 CEEBLLST                       40 A-CON | CEESG012         $UNRESOLVED(W)                                     |
+      8EC CEEBLLST                       44 A-CON | CEESG013         $UNRESOLVED(W)                                     |
+      8F0 CEEBLLST                       48 A-CON | CEESG014         $UNRESOLVED(W)                                     |
+      8F4 CEEBLLST                       4C A-CON | CEESG015         $UNRESOLVED(W)                                     |
+      8F8 CEEBLLST                       50 A-CON | CEESG016         $UNRESOLVED(W)                                     |
+      BF8 CEEBPIRA                      230 A-CON | CEEBPUBT         CEEBPUBT                        0 B_TEXT           |
+
+
+ TEXT CLASS = C_@@PPA2
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        4 $PRIV00001A                     4 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+
+
+ TEXT CLASS = C_@@CSINIT
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        0 $PRIV00001B                     0 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+
+
+ TEXT CLASS = B_LIT
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+1                                                 |                                                                     |
+       28 IEWBLIT                        28 L TOKE|                                                                     |
+
+
+1                                       C R O S S - R E F E R E N C E  T A B L E
+                                        _________________________________________
+
+ TEXT CLASS = B_LIT
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+       50 IEWBLIT                        50 C-LEN |                  $NON-RELOCATABLE                  B_TEXT           |
+       54 IEWBLIT                        54 A-CON |                                                    B_TEXT           |
+       70 IEWBLIT                        70 C-LEN |                  $NON-RELOCATABLE                  C_CODE           |
+       74 IEWBLIT                        74 A-CON |                                                    C_CODE           |
+       90 IEWBLIT                        90 C-LEN |                  $NON-RELOCATABLE                  C_WSA            |
+       B0 IEWBLIT                        B0 C-LEN |                  $NON-RELOCATABLE                  C_@@PPA2         |
+       B4 IEWBLIT                        B4 A-CON |                                                    C_@@PPA2         |
+       D0 IEWBLIT                        D0 C-LEN |                  $NON-RELOCATABLE                  C_@@CSINIT       |
+       D4 IEWBLIT                        D4 A-CON |                                                    C_@@CSINIT       |
+       F0 IEWBLIT                        F0 C-LEN |                  $NON-RELOCATABLE                  B_LIT            |
+       F4 IEWBLIT                        F4 A-CON |                                                    B_LIT            |
+
+
+ TEXT CLASS = C_WSA
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+       28 RACUST1#S                      28 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       2C RACUST1#S                      2C A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       30 RACUST1#S                      30 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       3C RACUST1#S                      3C A-CON | RACUST1#S        $PRIV000003                    10 C_WSA            |
+       40 RACUST1#S                      40 A-CON | RACUST1#C        RACUST1                         0 C_CODE           |
+       88 RACUST1#S                      88 V-CON | RACUST1          RACUST1                         0 C_CODE           |
+       9C RACUST1#S                      9C A-CON | RACUST1#S        $PRIV000003                    10 C_WSA            |
+
+
+ TEXT CLASS = D_INFO
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        6 RACUST1                         6 Q-CON | $PRIV000012      $NON-RELOCATABLE                0 D_ABREV          |
+       4F RACUST1                        4F Q-CON | $PRIV000016      $NON-RELOCATABLE                B D_SRCF           |
+       53 RACUST1                        53 Q-CON | RACUST1#C        $NON-RELOCATABLE                0 C_CODE           |
+       57 RACUST1                        57 Q-CON | RACUST1#C        $NON-RELOCATABLE             1D10 C_CODE           |
+       5F RACUST1                        5F Q-CON | $PRIV000011      $NON-RELOCATABLE                0 D_LINE           |
+      3B6 RACUST1                       3B6 Q-CON | RACUST1#C        $NON-RELOCATABLE                0 C_CODE           |
+      3BA RACUST1                       3BA Q-CON | RACUST1#C        $NON-RELOCATABLE              FB6 C_CODE           |
+     16CE RACUST1                      16CE Q-CON | RACUST1#C        $NON-RELOCATABLE              190 C_CODE           |
+     16F2 RACUST1                      16F2 Q-CON | RACUST1#C        $NON-RELOCATABLE              4F2 C_CODE           |
+     170F RACUST1                      170F Q-CON | RACUST1#C        $NON-RELOCATABLE              5AE C_CODE           |
+     1736 RACUST1                      1736 Q-CON | RACUST1#C        $NON-RELOCATABLE              BE0 C_CODE           |
+     37A9 RACUST1                      37A9 Q-CON | RACUST1#C        $NON-RELOCATABLE             1CCC C_CODE           |
+     37B4 RACUST1                      37B4 Q-CON | RACUST1#C        $NON-RELOCATABLE             1CCC C_CODE           |
+
+
+1                                       C R O S S - R E F E R E N C E  T A B L E
+                                        _________________________________________
+
+ TEXT CLASS = D_INFO
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+     37D0 RACUST1                      37D0 Q-CON | $PRIV000016      $NON-RELOCATABLE               83 D_SRCF           |
+     37D4 RACUST1                      37D4 Q-CON | $PRIV000011      $NON-RELOCATABLE              380 D_LINE           |
+
+
+ TEXT CLASS = D_LINE
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+       20 RACUST1                        20 Q-CON | $PRIV000016      $NON-RELOCATABLE                B D_SRCF           |
+       27 RACUST1                        27 Q-CON | RACUST1#C        $NON-RELOCATABLE                0 C_CODE           |
+      3A0 RACUST1                       3A0 Q-CON | $PRIV000016      $NON-RELOCATABLE               83 D_SRCF           |
+      3A7 RACUST1                       3A7 Q-CON | RACUST1#C        $NON-RELOCATABLE                0 C_CODE           |
+
+
+ TEXT CLASS = D_ABREV
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+
+
+ TEXT CLASS = D_ARNGE
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        6 RACUST1                         6 Q-CON | $PRIV000010      $NON-RELOCATABLE                0 D_INFO           |
+       10 RACUST1                        10 Q-CON | RACUST1#C        $NON-RELOCATABLE                0 C_CODE           |
+
+
+ TEXT CLASS = D_PBNMS
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        6 RACUST1                         6 Q-CON | $PRIV000010      $NON-RELOCATABLE                0 D_INFO           |
+
+
+ TEXT CLASS = D_PPA
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        6 RACUST1                         6 Q-CON | $PRIV000012      $NON-RELOCATABLE              2C9 D_ABREV          |
+
+1
+1                                       C R O S S - R E F E R E N C E  T A B L E
+                                        _________________________________________
+
+ TEXT CLASS = D_PPA
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        C RACUST1                         C Q-CON | RACUST1#C        $NON-RELOCATABLE             1C58 C_CODE           |
+       10 RACUST1                        10 Q-CON | $PRIV000010      $NON-RELOCATABLE                B D_INFO           |
+       3E RACUST1                        3E Q-CON | RACUST1#C        $NON-RELOCATABLE             19A0 C_CODE           |
+       42 RACUST1                        42 Q-CON | $PRIV000010      $NON-RELOCATABLE              3A9 D_INFO           |
+
+
+ TEXT CLASS = D_SRCF
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        6 RACUST1                         6 Q-CON | $PRIV000012      $NON-RELOCATABLE              253 D_ABREV          |
+       2A RACUST1                        2A Q-CON | $PRIV000017      $NON-RELOCATABLE                0 D_SRCTXT         |
+       3F RACUST1                        3F Q-CON | $PRIV000018      $NON-RELOCATABLE                0 D_SRCATR         |
+       4E RACUST1                        4E Q-CON | $PRIV000012      $NON-RELOCATABLE              26C D_ABREV          |
+       7E RACUST1                        7E Q-CON | $PRIV000012      $NON-RELOCATABLE              276 D_ABREV          |
+       84 RACUST1                        84 Q-CON | $PRIV000016      $NON-RELOCATABLE               53 D_SRCF           |
+       9E RACUST1                        9E Q-CON | $PRIV000012      $NON-RELOCATABLE              289 D_ABREV          |
+       A4 RACUST1                        A4 Q-CON | $PRIV000016      $NON-RELOCATABLE               53 D_SRCF           |
+       BE RACUST1                        BE Q-CON | $PRIV000012      $NON-RELOCATABLE              29B D_ABREV          |
+       EE RACUST1                        EE Q-CON | $PRIV000012      $NON-RELOCATABLE              2A5 D_ABREV          |
+       F4 RACUST1                        F4 Q-CON | $PRIV000016      $NON-RELOCATABLE               C3 D_SRCF           |
+      10E RACUST1                       10E Q-CON | $PRIV000012      $NON-RELOCATABLE              2B7 D_ABREV          |
+      114 RACUST1                       114 Q-CON | $PRIV000016      $NON-RELOCATABLE               53 D_SRCF           |
+
+
+ TEXT CLASS = D_SRCTXT
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+
+
+ TEXT CLASS = D_SRCATR
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        C RACUST1                         C Q-CON | $PRIV000019      $NON-RELOCATABLE                0 D_XREF           |
+
+
+ TEXT CLASS = D_XREF
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        6 RACUST1                         6 Q-CON | $PRIV000012      $NON-RELOCATABLE              2E4 D_ABREV          |
+1
+
+1                                       C R O S S - R E F E R E N C E  T A B L E
+                                        _________________________________________
+
+ TEXT CLASS = D_XREF
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+        C RACUST1                         C Q-CON | $PRIV000016      $NON-RELOCATABLE                B D_SRCF           |
+       10 RACUST1                        10 Q-CON | $PRIV000010      $NON-RELOCATABLE                B D_INFO           |
+
+
+ TEXT CLASS = D_MCODE
+
+ ---------------  R E F E R E N C E  --------------------------  T A R G E T  -------------------------------------------
+   CLASS                            ELEMENT       |                                            ELEMENT                  |
+   OFFSET SECT/PART(ABBREV)          OFFSET  TYPE | SYMBOL(ABBREV)   SECTION (ABBREV)           OFFSET CLASS NAME       |
+                                                  |                                                                     |
+                                        *** E N D  O F  C R O S S  R E F E R E N C E ***
+
+
+
+                                 *** O P E R A T I O N   S U M M A R Y   R E P O R T ***
+
+1PROCESSING OPTIONS:
+
+    ALIASES             NO
+    ALIGN2              NO
+    AMODE               UNSPECIFIED
+    CALL                YES
+    CASE                UPPER
+    COMPAT              UNSPECIFIED
+    COMPRESS            AUTO
+    DCBS                NO
+    DYNAM               NO
+    EXTATTR             UNSPECIFIED
+    EXITS:              NONE
+    FILL                NONE
+    GID                 UNSPECIFIED
+    HOBSET              NO
+    INFO                NO
+    LET                 04
+    LINECT              060
+    LIST                SUMMARY
+    LISTPRIV            NO
+    LONGPARM            NO
+    MAP                 NO
+    MAXBLK              032760
+    MODMAP              NO
+    MSGLEVEL            00
+    OVLY                NO
+    PRINT               YES
+    RES                 NO
+    REUSABILITY         REENTRANT
+    RMODE               UNSPECIFIED
+    RMODEX              NO
+    SIGN                NO
+    STORENX             NOREPLACE
+    STRIPCL             NO
+    STRIPSEC            NO
+    SYMTRACE
+    TERM                NO
+    TRAP                ON
+    UID                 UNSPECIFIED
+    UPCASE              NO
+    WKSPACE             000000K,000000K
+    XCAL                NO
+    XREF                YES
+    ***END OF OPTIONS***
+
+
+
+
+1SAVE OPERATION SUMMARY:
+
+    MEMBER NAME         RACUST1
+    LOAD LIBRARY        IBMUSER.CB12V51.LOAD
+    PROGRAM TYPE        PROGRAM OBJECT(FORMAT 3)
+    VOLUME SERIAL       USRVS1
+    DISPOSITION         ADDED NEW
+    TIME OF SAVE        11.16.07  MAR 18, 2025
+
+
+1SAVE MODULE ATTRIBUTES:
+
+    AC                  000
+    AMODE                31
+    COMPRESSION         NONE
+    DC                  NO
+    EDITABLE            YES
+    EXCEEDS 16MB        NO
+    EXECUTABLE          YES
+    LONGPARM            NO
+    MIGRATABLE          NO
+    OL                  NO
+    OVLY                NO
+    PACK,PRIME          NO,NO
+    PAGE ALIGN          NO
+    REFR                NO
+    RENT                YES
+    REUS                YES
+    RMODE               ANY
+    SCTR                NO
+    SIGN                NO
+    SSI
+    SYM GENERATED       NO
+    TEST                NO
+    XPLINK              NO
+    MODULE SIZE (HEX)   00002B44
+    DASD SIZE (HEX)     00019000
+
+
+1 ENTRY POINT AND ALIAS SUMMARY:
+
+  NAME:            ENTRY TYPE AMODE C_OFFSET CLASS NAME        STATUS
+
+  RACUST1           MAIN_EP      31 00000000 C_CODE
+
+                          *** E N D   O F   O P E R A T I O N   S U M M A R Y   R E P O R T ***
+
+
+
+
+1z/OS V2 R5 BINDER     11:16:07 TUESDAY MARCH 18, 2025
+ BATCH EMULATOR  JOB(COMP    ) STEP(PROGRAM ) PGM= HEWL      PROCEDURE(LKED    )
+ IEW2008I 0F03 PROCESSING COMPLETED.  RETURN CODE =  0.
+
+
+
+1----------------------
+ MESSAGE SUMMARY REPORT
+ ----------------------
+  TERMINAL MESSAGES      (SEVERITY = 16)
+  NONE
+
+  SEVERE MESSAGES        (SEVERITY = 12)
+  NONE
+
+  ERROR MESSAGES         (SEVERITY = 08)
+  NONE
+
+  WARNING MESSAGES       (SEVERITY = 04)
+  NONE
+
+  INFORMATIONAL MESSAGES (SEVERITY = 00)
+  2008  2278  2322
+
+
+  **** END OF MESSAGE SUMMARY REPORT ****
+

@@ -1,0 +1,1 @@
+SegmentId	SegmentName	DBId	OccurId	ParentId	TYPE	EXTERNALNAME	BYTES	FREQ	ENCODING	SourceSegId	SourceDBId	REMARKS

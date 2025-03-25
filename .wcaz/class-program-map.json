@@ -1,0 +1,1127 @@
+[
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaCustomerRequest.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\House.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\CustomerSecure.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\WsHeader.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaEndowment.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaHouse.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\Endowment.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\Commercial.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\Customer.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\ErrorMsg.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaPolicyRequest.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\Racust1.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": [
+      {
+        "id": "JAVA:53C4745D1660CC163B718CF1605412D3C43D9A329C06A94D3968DB40C31C6C2F",
+        "type": null,
+        "type_class_id": null,
+        "name_editable": "mainlineObtainCustomerNumber",
+        "suggested_names": [
+          "mainlineObtainCustomerNumber"
+        ],
+        "member_type": "method",
+        "method_info": {
+          "input_parameters": [],
+          "local_variables": [
+            {
+              "id": "JAVA:E328A5B33A98349E6EB0D92DB2F684E004BB8541780C8557AAF6A8BC85BE68DC",
+              "type": "String",
+              "type_class_id": null,
+              "name_editable": "genAcount",
+              "suggested_names": [
+                "genAcount"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:11",
+                "name": "GENAcount",
+                "type": "variable",
+                "pic_info": "PIC X(16)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 26
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:11",
+                  "name": "GENAcount",
+                  "type": "variable",
+                  "pic_info": "PIC X(16)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 26
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:4728D72FA957E4903D2DADF64EB37642AE4390A0F02152747EFC9752C8069744",
+              "type": "int",
+              "type_class_id": null,
+              "name_editable": "wsResp",
+              "suggested_names": [
+                "wsResp"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:9",
+                "name": "WS-RESP",
+                "type": "variable",
+                "pic_info": "PIC S9(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 24
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:9",
+                  "name": "WS-RESP",
+                  "type": "variable",
+                  "pic_info": "PIC S9(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 24
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:B0C089F60A6565B60523A970E2426C77B12C8BD01B02ACBACD4E81F9653001DD",
+              "type": "int",
+              "type_class_id": null,
+              "name_editable": "lastCustNum",
+              "suggested_names": [
+                "lastCustNum"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:10",
+                "name": "LastCustNum",
+                "type": "variable",
+                "pic_info": "PIC S9(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 25
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:10",
+                  "name": "LastCustNum",
+                  "type": "variable",
+                  "pic_info": "PIC S9(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 25
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:88DFA7E27121CC65CA241097454C3F5222288041EEFE89658328095ABE4D6613",
+              "type": "String",
+              "type_class_id": null,
+              "name_editable": "genApool",
+              "suggested_names": [
+                "genApool"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:12",
+                "name": "GENApool",
+                "type": "variable",
+                "pic_info": "PIC X(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 27
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:12",
+                  "name": "GENApool",
+                  "type": "variable",
+                  "pic_info": "PIC X(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 27
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "is_initial": false,
+        "variable_info": null,
+        "cobol_info": {
+          "id": "ADDI:3",
+          "name": "MAINLINE:OBTAIN-CUSTOMER-NUMBER",
+          "type": "paragraph",
+          "pic_info": null,
+          "location_info": {
+            "id": "ADDI:0",
+            "program_file_name": "RACUST1.cbl",
+            "line_number": 150
+          }
+        },
+        "merged_cobol_info": [
+          {
+            "id": "ADDI:3",
+            "name": "MAINLINE:OBTAIN-CUSTOMER-NUMBER",
+            "type": "paragraph",
+            "pic_info": null,
+            "location_info": {
+              "id": "ADDI:0",
+              "program_file_name": "RACUST1.cbl",
+              "line_number": 150
+            }
+          }
+        ]
+      },
+      {
+        "id": "JAVA:3FDA82A78DA5023BA548D0367B1E9297A2DEF4F6661D972C3FB8FD2C4A93C2E2",
+        "type": null,
+        "type_class_id": null,
+        "name_editable": "mainlineInsertCustomer",
+        "suggested_names": [
+          "mainlineInsertCustomer"
+        ],
+        "member_type": "method",
+        "method_info": {
+          "input_parameters": [
+            {
+              "id": "JAVA:F840AEE0DAE84F6ED8FE6818EC2791159514F1C78C26F85230143CE8FA25AF1E",
+              "type": "CaCustomerRequest",
+              "type_class_id": "JAVA:CEF41B69B27CB901963C747288F239E8D25AE3BE3BCCD2A99F6CDCDB4D73F126",
+              "name_editable": "caCustomerRequest",
+              "suggested_names": [
+                "caCustomerRequest"
+              ],
+              "member_type": "parameter",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:161",
+                "name": "CA-CUSTOMER-REQUEST",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:6",
+                  "program_file_name": "LGCMAREA.CPY",
+                  "line_number": 28
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:161",
+                  "name": "CA-CUSTOMER-REQUEST",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:6",
+                    "program_file_name": "LGCMAREA.CPY",
+                    "line_number": 28
+                  }
+                }
+              ]
+            }
+          ],
+          "local_variables": [
+            {
+              "id": "JAVA:75971B4A1579F207AD95180A6264663F59033581C1030AE7564847BA00785982",
+              "type": "ErrorMsg",
+              "type_class_id": "JAVA:18D48D963E6ABFC5D230B673B88B6A1A68E1C0009D096EA21D2F764E2A646ABB",
+              "name_editable": "errorMsg",
+              "suggested_names": [
+                "errorMsg"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:16",
+                "name": "ERROR-MSG",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 31
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:16",
+                  "name": "ERROR-MSG",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 31
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "is_initial": false,
+        "variable_info": null,
+        "cobol_info": {
+          "id": "ADDI:4",
+          "name": "MAINLINE:INSERT-CUSTOMER",
+          "type": "paragraph",
+          "pic_info": null,
+          "location_info": {
+            "id": "ADDI:0",
+            "program_file_name": "RACUST1.cbl",
+            "line_number": 164
+          }
+        },
+        "merged_cobol_info": [
+          {
+            "id": "ADDI:4",
+            "name": "MAINLINE:INSERT-CUSTOMER",
+            "type": "paragraph",
+            "pic_info": null,
+            "location_info": {
+              "id": "ADDI:0",
+              "program_file_name": "RACUST1.cbl",
+              "line_number": 164
+            }
+          }
+        ]
+      },
+      {
+        "id": "JAVA:3F32D5CC955D0D7582866855F9E0EBD341FBC024B1A9D51AB7241910A16C25D1",
+        "type": null,
+        "type_class_id": null,
+        "name_editable": "mainlineWriteErrorMessage",
+        "suggested_names": [
+          "mainlineWriteErrorMessage"
+        ],
+        "member_type": "method",
+        "method_info": {
+          "input_parameters": [
+            {
+              "id": "JAVA:A726635D3A1FA25D2A8AE694F832FC43A4DC0969DBE63008B66151B66575E029",
+              "type": "Dfhcommarea1",
+              "type_class_id": "JAVA:98E8E2CF62F23D98A9B7E9B85F566476840A51C2DE182FEC4702310B2C8C514B",
+              "name_editable": "dfhcommarea1",
+              "suggested_names": [
+                "dfhcommarea1"
+              ],
+              "member_type": "parameter",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:156",
+                "name": "DFHCOMMAREA-1",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 74
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:156",
+                  "name": "DFHCOMMAREA-1",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 74
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:75971B4A1579F207AD95180A6264663F59033581C1030AE7564847BA00785982",
+              "type": "ErrorMsg",
+              "type_class_id": "JAVA:18D48D963E6ABFC5D230B673B88B6A1A68E1C0009D096EA21D2F764E2A646ABB",
+              "name_editable": "errorMsg",
+              "suggested_names": [
+                "errorMsg"
+              ],
+              "member_type": "parameter",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:16",
+                "name": "ERROR-MSG",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 31
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:16",
+                  "name": "ERROR-MSG",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 31
+                  }
+                }
+              ]
+            }
+          ],
+          "local_variables": [
+            {
+              "id": "JAVA:5867DDF0D566E635CB299419939BE0F3760542C12B2F503B6FCFA86C7D3155B2",
+              "type": "CaErrorMsg",
+              "type_class_id": "JAVA:1FAA022F865FE73D2046059ABB66F37E1C126D581C5E83BE223AC1B8949C0909",
+              "name_editable": "caErrorMsg",
+              "suggested_names": [
+                "caErrorMsg"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:37",
+                "name": "CA-ERROR-MSG",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 52
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:37",
+                  "name": "CA-ERROR-MSG",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 52
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:F669FD0B607424F1B1F0EF425FEFF9209E65E89CA4F3D9961B6A7491DE9C00D5",
+              "type": "int",
+              "type_class_id": null,
+              "name_editable": "wsAbstime",
+              "suggested_names": [
+                "wsAbstime"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:13",
+                "name": "WS-ABSTIME",
+                "type": "variable",
+                "pic_info": "PIC S9(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 28
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:13",
+                  "name": "WS-ABSTIME",
+                  "type": "variable",
+                  "pic_info": "PIC S9(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 28
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:1D5D264393E40822E5F78D694CEE0F3DE2B9F5CB46AF4B616D834ABEA257544C",
+              "type": "String",
+              "type_class_id": null,
+              "name_editable": "wsDate",
+              "suggested_names": [
+                "wsDate"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:15",
+                "name": "WS-DATE",
+                "type": "variable",
+                "pic_info": "PIC X(10)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 30
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:15",
+                  "name": "WS-DATE",
+                  "type": "variable",
+                  "pic_info": "PIC X(10)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 30
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:9C98F9BD4CCBEA5CB1AF6FE320AD94BEF6F14CB10D06502AB2790D985C34AC84",
+              "type": "String",
+              "type_class_id": null,
+              "name_editable": "wsTime",
+              "suggested_names": [
+                "wsTime"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:14",
+                "name": "WS-TIME",
+                "type": "variable",
+                "pic_info": "PIC X(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 29
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:14",
+                  "name": "WS-TIME",
+                  "type": "variable",
+                  "pic_info": "PIC X(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 29
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "is_initial": false,
+        "variable_info": null,
+        "cobol_info": {
+          "id": "ADDI:2",
+          "name": "MAINLINE:WRITE-ERROR-MESSAGE",
+          "type": "paragraph",
+          "pic_info": null,
+          "location_info": {
+            "id": "ADDI:0",
+            "program_file_name": "RACUST1.cbl",
+            "line_number": 238
+          }
+        },
+        "merged_cobol_info": [
+          {
+            "id": "ADDI:2",
+            "name": "MAINLINE:WRITE-ERROR-MESSAGE",
+            "type": "paragraph",
+            "pic_info": null,
+            "location_info": {
+              "id": "ADDI:0",
+              "program_file_name": "RACUST1.cbl",
+              "line_number": 238
+            }
+          }
+        ]
+      },
+      {
+        "id": "JAVA:680036190E3BA9F475F4A336D19A3DEDC3F411972E240CA0A062298CAD3D3810",
+        "type": null,
+        "type_class_id": null,
+        "name_editable": "mainlineFirstSentences",
+        "suggested_names": [
+          "mainlineFirstSentences"
+        ],
+        "member_type": "method",
+        "method_info": {
+          "input_parameters": [
+            {
+              "id": "JAVA:A726635D3A1FA25D2A8AE694F832FC43A4DC0969DBE63008B66151B66575E029",
+              "type": "Dfhcommarea1",
+              "type_class_id": "JAVA:98E8E2CF62F23D98A9B7E9B85F566476840A51C2DE182FEC4702310B2C8C514B",
+              "name_editable": "dfhcommarea1",
+              "suggested_names": [
+                "dfhcommarea1"
+              ],
+              "member_type": "parameter",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:156",
+                "name": "DFHCOMMAREA-1",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 74
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:156",
+                  "name": "DFHCOMMAREA-1",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 74
+                  }
+                }
+              ]
+            }
+          ],
+          "local_variables": [
+            {
+              "id": "JAVA:DA91F48EE04903225E9B90D992FC872359F4AD25B9766156B892BD5651E95682",
+              "type": "int",
+              "type_class_id": null,
+              "name_editable": "wsRequiredCaLen",
+              "suggested_names": [
+                "wsRequiredCaLen"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:45",
+                "name": "WS-REQUIRED-CA-LEN",
+                "type": "variable",
+                "pic_info": "PIC S9(4)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 60
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:45",
+                  "name": "WS-REQUIRED-CA-LEN",
+                  "type": "variable",
+                  "pic_info": "PIC S9(4)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 60
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:E3737116095ADDC19BF68605EA6E39EFD5BA01CD7AB929436A0C77D3C8A23F17",
+              "type": "String",
+              "type_class_id": null,
+              "name_editable": "lgacvs01",
+              "suggested_names": [
+                "lgacvs01"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:41",
+                "name": "LGACVS01",
+                "type": "variable",
+                "pic_info": "PIC X(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 56
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:41",
+                  "name": "LGACVS01",
+                  "type": "variable",
+                  "pic_info": "PIC X(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 56
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:00E6F6A6F1F3B6694D9BD3C3D70C70C394928A4CFFCC8EB806AB0F611E0B391F",
+              "type": "int",
+              "type_class_id": null,
+              "name_editable": "wsCaHeaderLen",
+              "suggested_names": [
+                "wsCaHeaderLen"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:44",
+                "name": "WS-CA-HEADER-LEN",
+                "type": "variable",
+                "pic_info": "PIC S9(4)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 59
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:44",
+                  "name": "WS-CA-HEADER-LEN",
+                  "type": "variable",
+                  "pic_info": "PIC S9(4)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 59
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:DECE873E727A0694720A01AAEC2FDA3A66B489F1B25AC52D370112315708732F",
+              "type": "String",
+              "type_class_id": null,
+              "name_editable": "lgacdb02",
+              "suggested_names": [
+                "lgacdb02"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:40",
+                "name": "LGACDB02",
+                "type": "variable",
+                "pic_info": "PIC X(8)",
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 55
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:40",
+                  "name": "LGACDB02",
+                  "type": "variable",
+                  "pic_info": "PIC X(8)",
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 55
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:6C8CD1A074547374E1F1D8544D518BF5204349334D2ED6034CD3FA42465ED966",
+              "type": "Cdb2Area",
+              "type_class_id": "JAVA:005C1F7E0FA0A5ACCBAA7B0E60396745CD6E9364AB98CB0EAB353308C55CC1E3",
+              "name_editable": "cdb2Area",
+              "suggested_names": [
+                "cdb2Area"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:29",
+                "name": "CDB2AREA",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 44
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:29",
+                  "name": "CDB2AREA",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 44
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:D265E54D9CD42E04759120B0BF9AE637BC2CF463E788BF1A79B47BDEAC25E6B2",
+              "type": "int",
+              "type_class_id": null,
+              "name_editable": "wsCustomerLen",
+              "suggested_names": [
+                "wsCustomerLen"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:47",
+                "name": "WS-CUSTOMER-LEN",
+                "type": "variable",
+                "pic_info": "PIC S9(4)",
+                "location_info": {
+                  "id": "ADDI:3",
+                  "program_file_name": "LGPOLICY.CPY",
+                  "line_number": 30
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:47",
+                  "name": "WS-CUSTOMER-LEN",
+                  "type": "variable",
+                  "pic_info": "PIC S9(4)",
+                  "location_info": {
+                    "id": "ADDI:3",
+                    "program_file_name": "LGPOLICY.CPY",
+                    "line_number": 30
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:A91F0CEC80ABD32F3D4CB26ACAE1D1D5153F5D75BA8A67150D710D8519804FC8",
+              "type": "WsHeader",
+              "type_class_id": "JAVA:60C9D45DF4251FD346E3D7B3AD5DD2F89BCB08BAAB6F6F1D66FBDDA883D3E2E6",
+              "name_editable": "wsHeader",
+              "suggested_names": [
+                "wsHeader"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:1",
+                "name": "WS-HEADER",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 15
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:1",
+                  "name": "WS-HEADER",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 15
+                  }
+                }
+              ]
+            },
+            {
+              "id": "JAVA:75971B4A1579F207AD95180A6264663F59033581C1030AE7564847BA00785982",
+              "type": "ErrorMsg",
+              "type_class_id": "JAVA:18D48D963E6ABFC5D230B673B88B6A1A68E1C0009D096EA21D2F764E2A646ABB",
+              "name_editable": "errorMsg",
+              "suggested_names": [
+                "errorMsg"
+              ],
+              "member_type": "variable",
+              "method_info": null,
+              "is_initial": false,
+              "variable_info": {
+                "init_value_editable": null
+              },
+              "cobol_info": {
+                "id": "ADDI:16",
+                "name": "ERROR-MSG",
+                "type": "variable",
+                "pic_info": null,
+                "location_info": {
+                  "id": "ADDI:1",
+                  "program_file_name": "RACUST1.cbl",
+                  "line_number": 31
+                }
+              },
+              "merged_cobol_info": [
+                {
+                  "id": "ADDI:16",
+                  "name": "ERROR-MSG",
+                  "type": "variable",
+                  "pic_info": null,
+                  "location_info": {
+                    "id": "ADDI:1",
+                    "program_file_name": "RACUST1.cbl",
+                    "line_number": 31
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "is_initial": false,
+        "variable_info": null,
+        "cobol_info": {
+          "id": "ADDI:1",
+          "name": "MAINLINE:FIRST_SENTENCES",
+          "type": "paragraph",
+          "pic_info": null,
+          "location_info": {
+            "id": "ADDI:0",
+            "program_file_name": "RACUST1.cbl",
+            "line_number": 80
+          }
+        },
+        "merged_cobol_info": [
+          {
+            "id": "ADDI:1",
+            "name": "MAINLINE:FIRST_SENTENCES",
+            "type": "paragraph",
+            "pic_info": null,
+            "location_info": {
+              "id": "ADDI:0",
+              "program_file_name": "RACUST1.cbl",
+              "line_number": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaClaim.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaCommercial.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\Motor.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\Cdb2Area.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\Dfhcommarea1.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaCustsecrRequest.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\EmVariable.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\Claim.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaMotor.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\implementation\\CaErrorMsg.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  },
+  {
+    "javaClassRelativePath": "java\\com\\ibm\\wcaz\\datamodel\\Policy.java",
+    "cobolProgramName": "RACUST1",
+    "cobolProgramRelativePath": "RACUST\\cobol\\RACUST1.cbl",
+    "methods": []
+  }
+]

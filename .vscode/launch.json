@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.sql/java.sql=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/java.nio.charset=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED --add-opens java.base/java.time.format=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED -cp c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\java;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\test;c:\\Users\\Administrator\\.vscode\\extensions\\ibm.ibm-wca4z-validate-assistant-2.4.0\\resources\\packages\\run_junit\\*;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mockz\\*;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mocking\\*;C:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\jzos\\*.jar;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\*"
+    },
+    {
+      "type": "java",
+      "name": "RACUST1",
+      "request": "launch",
+      "mainClass": "${file}",
+      "projectName": "RACUST1",
+      "classPaths": [
+        "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\java",
+        "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\test",
+        "c:\\Users\\Administrator\\.vscode\\extensions\\ibm.ibm-wca4z-validate-assistant-2.4.0\\resources\\packages\\run_junit\\*",
+        "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mockz\\*",
+        "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mocking\\*",
+        "C:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\jzos\\*.jar",
+        "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\*"
+      ],
+      "vmArgs": "--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.sql/java.sql=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/java.nio.charset=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED --add-opens java.base/java.time.format=ALL-UNNAMED --add-opens java.base/java.security=ALL-UNNAMED -cp c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\java;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\test;c:\\Users\\Administrator\\.vscode\\extensions\\ibm.ibm-wca4z-validate-assistant-2.4.0\\resources\\packages\\run_junit\\*;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mockz\\*;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mocking\\*;C:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\jzos\\*.jar;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\*"
+    }
+  ]
+}

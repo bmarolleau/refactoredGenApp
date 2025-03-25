@@ -1,0 +1,23 @@
+ID	StringContent
+14	'	
+13	' INSERT CUSTOMER'	
+1	' NO COMMAREA RECEIVED'	
+3	'00'	
+8	'0000'	
+6	'02ACUS'	
+7	'5732fec825535eeafb8fac50fee3a8aa'	
+16	'90'	
+4	'98'	
+2	'LGCA'	
+18	'LGSTSQ'	
+9	'N'	
+12	'NO'	
+15	'ON'	
+11	0	
+20	1	
+5	225	
+10	32500	
+22	90	
+19	91	
+17	DEFAULT	
+21	EIBCALEN	

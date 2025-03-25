@@ -1,0 +1,114 @@
+{
+    "format-version": "1",
+    "CBL": [
+        {
+            "file": "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.wcaztmi\\.expanded\\RACUST\\cobol\\RACUST1.cbl",
+            "errors": [
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "220",
+                    "description": "Error: File could not be opened: DEFVAR",
+                    "subject": "DEFVAR",
+                    "severity": "S",
+                    "line": "14"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "220",
+                    "description": "Error: File could not be opened: CICS1",
+                    "subject": "CICS1",
+                    "severity": "S",
+                    "line": "79"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "220",
+                    "description": "Error: File could not be opened: DFHEIBLK",
+                    "subject": "DFHEIBLK",
+                    "severity": "S",
+                    "line": "79"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "220",
+                    "description": "Error: File could not be opened: DFHEIVAR",
+                    "subject": "DFHEIVAR",
+                    "severity": "S",
+                    "line": "79"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "220",
+                    "description": "Error: File could not be opened: DIBSTAT",
+                    "subject": "DIBSTAT",
+                    "severity": "S",
+                    "line": "79"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBTRNID",
+                    "subject": "EIBTRNID",
+                    "severity": "E",
+                    "line": "88"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBTRMID",
+                    "subject": "EIBTRMID",
+                    "severity": "E",
+                    "line": "89"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBTASKN",
+                    "subject": "EIBTASKN",
+                    "severity": "E",
+                    "line": "90"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBCALEN",
+                    "subject": "EIBCALEN",
+                    "severity": "E",
+                    "line": "101"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBCALEN",
+                    "subject": "EIBCALEN",
+                    "severity": "E",
+                    "line": "109"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBCALEN",
+                    "subject": "EIBCALEN",
+                    "severity": "E",
+                    "line": "117"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBCALEN",
+                    "subject": "EIBCALEN",
+                    "severity": "E",
+                    "line": "256"
+                },
+                {
+                    "scanned-obj": "RACUST1.CBL",
+                    "code": "10010",
+                    "description": "Error: Variable not in symbol table: EIBCALEN",
+                    "subject": "EIBCALEN",
+                    "severity": "E",
+                    "line": "257"
+                }
+            ]
+        }
+    ]
+}

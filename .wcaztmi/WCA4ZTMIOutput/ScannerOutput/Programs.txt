@@ -1,0 +1,5 @@
+ProgramID	ProgramName	HasNestedPrograms	Ancestor	ParagraphsCounter	eTimeStamp	OccurID	ProgramTypeID
+1	RACUST1	0	""	4	2025-03-18 05:35:31.000	262	1	
+2	LGACVS01					0	1	
+3	LGACDB02					0	1	
+4	LGSTSQ					0	1	
