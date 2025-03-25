@@ -8,7 +8,8 @@
     },
     "java.project.referencedLibraries": [
         "C:/Users/Administrator/Desktop/WCA4Z-Data/jzos/*.jar",
-        "c:/Users/Administrator/Desktop/WCA4Z-Data/refactoredGenApp/java/lib/**"
+        "c:/Users/Administrator/Desktop/WCA4Z-Data/refactoredGenApp/java/lib/**",
+        "c:/Users/Administrator/Desktop/WCA4Z-Data/validate1/java/lib/**"
     ],
     "java.test.config": [
         {

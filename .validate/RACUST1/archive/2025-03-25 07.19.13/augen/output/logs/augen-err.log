@@ -1,2 +1,0 @@
-2025-03-25 06:57:06.392 [main] ERROR AUGEN: |TAZTD4060E|Verification execution was failed : branch calculation failure: pathid=10, ACFG_Graph=main, ACFG_Node=ACFG_Node{)bb_index=6 pc_start=20 pc_end=28 node_type=IF pred={2,5} succ={7,8}}|
-2025-03-25 06:57:06.904 [main] ERROR AUGEN: |TAZTD4060E|Verification execution was failed : branch calculation failure: pathid=12, ACFG_Graph=main, ACFG_Node=ACFG_Node{)bb_index=6 pc_start=20 pc_end=28 node_type=IF pred={2,5} succ={7,8}}|
