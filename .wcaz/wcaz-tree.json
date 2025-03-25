@@ -9,24 +9,7 @@
         "scan": false,
         "exclude": [],
         "files": {
-          "RACUST1.cbl": {
-            "files": {
-              "java\\com\\ibm\\wcaz\\implementation\\Racust1.java": {
-                "files": {
-                  "mainlineObtainCustomerNumber": {},
-                  "mainlineInsertCustomer": {},
-                  "mainlineWriteErrorMessage": {},
-                  "mainlineFirstSentences": {}
-                },
-                "expand": 2,
-                "exclude": [],
-                "scan": false
-              }
-            },
-            "exclude": [],
-            "expand": 2,
-            "scan": false
-          }
+          "RACUST1.cbl": {}
         }
       }
     }

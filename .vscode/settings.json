@@ -1,0 +1,57 @@
+{
+    "zValidationAssistant.appLibraryPath": "IBMUSER.CB12V51.LOAD",
+    "zValidationAssistant.jUnitTestsPath": {
+        "RACUST1": "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java"
+    },
+    "zValidationAssistant.jUnitPackage": {
+        "RACUST1": "com.ibm.wcaz.tests"
+    },
+    "java.project.referencedLibraries": [
+        "C:/Users/Administrator/Desktop/WCA4Z-Data/jzos/*.jar",
+        "c:/Users/Administrator/Desktop/WCA4Z-Data/refactoredGenApp/java/lib/**"
+    ],
+    "java.test.config": [
+        {
+            "name": "Racust1.mainlineInsertCustomer",
+            "testKind": "junit",
+            "vmArgs": [
+                "--add-opens",
+                "java.base/java.lang=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.io=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.util=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.text=ALL-UNNAMED",
+                "--add-opens",
+                "java.sql/java.sql=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.nio=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.nio.charset=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.time=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.time.format=ALL-UNNAMED",
+                "--add-opens",
+                "java.base/java.security=ALL-UNNAMED",
+                "-cp",
+                "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\java;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\test;c:\\Users\\Administrator\\.vscode\\extensions\\ibm.ibm-wca4z-validate-assistant-2.4.0\\resources\\packages\\run_junit\\*;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mockz\\*;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mocking\\*;C:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\jzos\\*.jar;c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\*"
+            ],
+            "classPaths": [
+                "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\java",
+                "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\.validate\\RACUST1\\generated_code\\test",
+                "c:\\Users\\Administrator\\.vscode\\extensions\\ibm.ibm-wca4z-validate-assistant-2.4.0\\resources\\packages\\run_junit\\*",
+                "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mockz\\*",
+                "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\mocking\\*",
+                "C:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\jzos\\*.jar",
+                "c:\\Users\\Administrator\\Desktop\\WCA4Z-Data\\refactoredGenApp\\java\\lib\\*"
+            ]
+        }
+    ],
+    "java.test.defaultConfig": "Racust1.mainlineInsertCustomer",
+    "java.trace.server": "verbose",
+    "java.project.sourcePaths": [
+        "java"
+    ]
+}
