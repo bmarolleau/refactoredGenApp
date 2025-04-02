@@ -1,9 +1,9 @@
       **************************************************************************
-      * Created: Tue, 25 Mar 2025 13:09:45 GMT                                  
+      * Created: Wed, 2 Apr 2025 10:09:05 GMT                                   
       * By: IBM watsonx Code Assistant for Z Refactoring Assistant              
       * Workbook name: RACUST1                                                  
-      * Workbook id: ba6d5c18-98ea-4700-bcf0-4f8ae39f4e3d                       
-      * Project: $GenApp_8259598a-b6cd-4b00-9995-d42577756ab5                   
+      * Workbook id: 5141c854-7f47-4513-86de-491aa5f35384                       
+      * Project: $GenApp_bc015fe4-8aa4-49e9-b199-a096e0936136                   
       * Generate SQL cursor hints: on (change behavior in settings)             
       **************************************************************************
                                                                                 
@@ -64,17 +64,16 @@
                                                                                 
            EXEC SQL                                                             
              INCLUDE SQLCA                                                      
+           END-EXEC. 
+           EXEC SQL
+             INCLUDE DGENAPP
            END-EXEC.                                                            
                                                                                 
        LINKAGE SECTION.                                                         
-       01  DFHCOMMAREA-1.                                                       
+       01  DFHCOMMAREA.                                                         
            EXEC SQL                                                             
              INCLUDE LGCMAREA                                                   
-           END-EXEC.  
-
-           EXEC SQL
-             INCLUDE DGENAPP
-           END-EXEC.                                                          
+           END-EXEC.                                                            
                                                                                 
        PROCEDURE DIVISION.                                                      
        MAINLINE SECTION.                                                        
@@ -107,7 +106,7 @@
       * initialize commarea return code to zero                                 
            MOVE '00' TO CA-RETURN-CODE                                          
            MOVE EIBCALEN TO WS-CALEN.                                           
-           SET WS-ADDR-DFHCOMMAREA TO ADDRESS OF DFHCOMMAREA-1.                 
+           SET WS-ADDR-DFHCOMMAREA TO ADDRESS OF DFHCOMMAREA.                   
                                                                                 
       * check commarea length                                                   
            ADD WS-CA-HEADER-LEN TO WS-REQUIRED-CA-LEN                           
@@ -124,7 +123,7 @@
            PERFORM INSERT-CUSTOMER.                                             
                                                                                 
            EXEC CICS LINK Program(LGACVS01)                                     
-                Commarea(DFHCOMMAREA-1)                                         
+                Commarea(DFHCOMMAREA)                                           
                 LENGTH(225)                                                     
            END-EXEC.                                                            
                                                                                 
@@ -255,13 +254,13 @@
       * Write 90 bytes or as much as we have of commarea to TDQ                 
            IF EIBCALEN > 0 THEN                                                 
              IF EIBCALEN < 91 THEN                                              
-               MOVE DFHCOMMAREA-1(1:EIBCALEN) TO CA-DATA                        
+               MOVE DFHCOMMAREA(1:EIBCALEN) TO CA-DATA                          
                EXEC CICS LINK PROGRAM('LGSTSQ')                                 
                          COMMAREA(CA-ERROR-MSG)                                 
                          LENGTH(LENGTH OF CA-ERROR-MSG)                         
                END-EXEC                                                         
              ELSE                                                               
-               MOVE DFHCOMMAREA-1(1:90) TO CA-DATA                              
+               MOVE DFHCOMMAREA(1:90) TO CA-DATA                                
                EXEC CICS LINK PROGRAM('LGSTSQ')                                 
                          COMMAREA(CA-ERROR-MSG)                                 
                          LENGTH(LENGTH OF CA-ERROR-MSG)                         
@@ -270,4 +269,5 @@
            END-IF.                                                              
            EXIT.                                                                
                                                                                 
+                                                                   
            EXIT PROGRAM.                                                        
