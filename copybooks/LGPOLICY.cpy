@@ -31,18 +31,18 @@
       *        QUOTE                                                   *
       * ... IS THE DCLGEN COMMAND THAT MADE THE FOLLOWING STATEMENTS   *
       ******************************************************************
-           EXEC SQL DECLARE GENASA1.POLICY TABLE
-           ( POLICYNUMBER                   INTEGER NOT NULL,
-             CUSTOMERNUMBER                 INTEGER NOT NULL,
-             ISSUEDATE                      DATE,
-             EXPIRYDATE                     DATE,
-             POLICYTYPE                     CHAR(1),
-             LASTCHANGED                    TIMESTAMP NOT NULL,
-             BROKERID                       INTEGER,
-             BROKERSREFERENCE               CHAR(10),
-             PAYMENT                        INTEGER,
-             COMMISSION                     SMALLINT
-           ) END-EXEC.
+      *     EXEC SQL DECLARE GENASA1.POLICY TABLE
+      *     ( POLICYNUMBER                   INTEGER NOT NULL,
+      *       CUSTOMERNUMBER                 INTEGER NOT NULL,
+      *       ISSUEDATE                      DATE,
+      ***       EXPIRYDATE                     DATE,
+      *       POLICYTYPE                     CHAR(1),
+      *       LASTCHANGED                    TIMESTAMP NOT NULL,
+      *       BROKERID                       INTEGER,
+      *       BROKERSREFERENCE               CHAR(10),
+      *       PAYMENT                        INTEGER,
+      *       COMMISSION                     SMALLINT
+      *     ) END-EXEC.
 		   
        01  WS-POLICY-LENGTHS.
            03 WS-CUSTOMER-LEN          PIC S9(4) COMP VALUE +72.
