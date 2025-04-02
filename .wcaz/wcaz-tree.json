@@ -1,17 +1,1 @@
-{
-  "RACUST": {
-    "expand": 2,
-    "scan": false,
-    "exclude": [],
-    "files": {
-      "cobol": {
-        "expand": 2,
-        "scan": false,
-        "exclude": [],
-        "files": {
-          "RACUST1.cbl": {}
-        }
-      }
-    }
-  }
-}
+{}
